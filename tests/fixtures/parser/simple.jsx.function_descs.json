@@ -1,0 +1,37 @@
+[
+    {
+        "name": "<top-level>",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 18,
+        "endColumn": 0
+    },
+    {
+        "name": "ListItem",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 3,
+        "endColumn": 1
+    },
+    {
+        "name": "<anonymous>",
+        "startLine": 2,
+        "startColumn": 18,
+        "endLine": 2,
+        "endColumn": 41
+    },
+    {
+        "name": "NumberList",
+        "startLine": 3,
+        "startColumn": 1,
+        "endLine": 11,
+        "endColumn": 1
+    },
+    {
+        "name": "<anonymous>",
+        "startLine": 7,
+        "startColumn": 34,
+        "endLine": 9,
+        "endColumn": 5
+    }
+]

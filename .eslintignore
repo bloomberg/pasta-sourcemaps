@@ -1,0 +1,4 @@
+tests/fixtures/
+*.d.ts
+dist/
+docs/

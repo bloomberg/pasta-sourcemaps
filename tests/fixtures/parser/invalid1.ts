@@ -1,0 +1,5 @@
+class B {
+    privat name() {
+        //..
+    }
+}

@@ -1,0 +1,163 @@
+[
+    {
+        "name": "<top-level>",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 85,
+        "endColumn": 0
+    },
+    {
+        "name": "local",
+        "startLine": 0,
+        "startColumn": 7,
+        "endLine": 3,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 5,
+        "startColumn": 5,
+        "endLine": 7,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 9,
+        "startColumn": 7,
+        "endLine": 11,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 13,
+        "startColumn": 6,
+        "endLine": 15,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 17,
+        "startColumn": 8,
+        "endLine": 19,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 21,
+        "startColumn": 8,
+        "endLine": 23,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 25,
+        "startColumn": 10,
+        "endLine": 27,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 29,
+        "startColumn": 10,
+        "endLine": 31,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 33,
+        "startColumn": 7,
+        "endLine": 35,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 37,
+        "startColumn": 9,
+        "endLine": 39,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 41,
+        "startColumn": 8,
+        "endLine": 43,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 45,
+        "startColumn": 9,
+        "endLine": 47,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 49,
+        "startColumn": 16,
+        "endLine": 51,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 53,
+        "startColumn": 12,
+        "endLine": 55,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 57,
+        "startColumn": 19,
+        "endLine": 59,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 61,
+        "startColumn": 18,
+        "endLine": 63,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 65,
+        "startColumn": 20,
+        "endLine": 67,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 69,
+        "startColumn": 20,
+        "endLine": 71,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 73,
+        "startColumn": 38,
+        "endLine": 75,
+        "endColumn": 1
+    },
+    {
+        "name": "<anonymous>",
+        "startLine": 77,
+        "startColumn": 3,
+        "endLine": 77,
+        "endColumn": 27
+    },
+    {
+        "name": "local",
+        "startLine": 77,
+        "startColumn": 33,
+        "endLine": 79,
+        "endColumn": 1
+    },
+    {
+        "name": "local",
+        "startLine": 82,
+        "startColumn": 12,
+        "endLine": 84,
+        "endColumn": 1
+    }
+]

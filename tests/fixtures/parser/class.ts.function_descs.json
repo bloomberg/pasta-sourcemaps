@@ -1,0 +1,163 @@
+[
+    {
+        "name": "<top-level>",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 99,
+        "endColumn": 1
+    },
+    {
+        "name": "D",
+        "startLine": 3,
+        "startColumn": 1,
+        "endLine": 7,
+        "endColumn": 5
+    },
+    {
+        "name": "f1",
+        "startLine": 7,
+        "startColumn": 5,
+        "endLine": 11,
+        "endColumn": 5
+    },
+    {
+        "name": "f2",
+        "startLine": 13,
+        "startColumn": 16,
+        "endLine": 16,
+        "endColumn": 5
+    },
+    {
+        "name": "localName",
+        "startLine": 18,
+        "startColumn": 18,
+        "endLine": 21,
+        "endColumn": 5
+    },
+    {
+        "name": "f4",
+        "startLine": 21,
+        "startColumn": 6,
+        "endLine": 25,
+        "endColumn": 5
+    },
+    {
+        "name": "get z",
+        "startLine": 25,
+        "startColumn": 5,
+        "endLine": 30,
+        "endColumn": 5
+    },
+    {
+        "name": "set z",
+        "startLine": 30,
+        "startColumn": 5,
+        "endLine": 33,
+        "endColumn": 5
+    },
+    {
+        "name": "get Z",
+        "startLine": 33,
+        "startColumn": 5,
+        "endLine": 38,
+        "endColumn": 5
+    },
+    {
+        "name": "f5",
+        "startLine": 38,
+        "startColumn": 5,
+        "endLine": 42,
+        "endColumn": 5
+    },
+    {
+        "name": "f6",
+        "startLine": 42,
+        "startColumn": 5,
+        "endLine": 46,
+        "endColumn": 5
+    },
+    {
+        "name": "f7",
+        "startLine": 46,
+        "startColumn": 5,
+        "endLine": 50,
+        "endColumn": 5
+    },
+    {
+        "name": "f8",
+        "startLine": 50,
+        "startColumn": 5,
+        "endLine": 54,
+        "endColumn": 5
+    },
+    {
+        "name": "f9",
+        "startLine": 56,
+        "startColumn": 18,
+        "endLine": 58,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed: prop1>",
+        "startLine": 58,
+        "startColumn": 6,
+        "endLine": 62,
+        "endColumn": 5
+    },
+    {
+        "name": "stringLiteral1",
+        "startLine": 62,
+        "startColumn": 5,
+        "endLine": 66,
+        "endColumn": 5
+    },
+    {
+        "name": "stringLiteral2",
+        "startLine": 68,
+        "startColumn": 22,
+        "endLine": 71,
+        "endColumn": 5
+    },
+    {
+        "name": "abc",
+        "startLine": 71,
+        "startColumn": 6,
+        "endLine": 75,
+        "endColumn": 5
+    },
+    {
+        "name": "42",
+        "startLine": 77,
+        "startColumn": 8,
+        "endLine": 80,
+        "endColumn": 5
+    },
+    {
+        "name": "43",
+        "startLine": 80,
+        "startColumn": 6,
+        "endLine": 84,
+        "endColumn": 5
+    },
+    {
+        "name": "44",
+        "startLine": 84,
+        "startColumn": 5,
+        "endLine": 88,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed>",
+        "startLine": 88,
+        "startColumn": 5,
+        "endLine": 92,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed: sym1>",
+        "startLine": 92,
+        "startColumn": 5,
+        "endLine": 96,
+        "endColumn": 5
+    }
+]

@@ -1,0 +1,30 @@
+[
+    {
+        "nameIndex": 5,
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 11,
+        "endColumn": 6
+    },
+    {
+        "nameIndex": 1,
+        "startLine": -11,
+        "startColumn": 10,
+        "endLine": 3,
+        "endColumn": -5
+    },
+    {
+        "nameIndex": 1,
+        "startLine": 0,
+        "startColumn": -9,
+        "endLine": 6,
+        "endColumn": 0
+    },
+    {
+        "nameIndex": 1,
+        "startLine": -4,
+        "startColumn": 4,
+        "endLine": 2,
+        "endColumn": 5
+    }
+]

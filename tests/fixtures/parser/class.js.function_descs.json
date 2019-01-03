@@ -1,0 +1,170 @@
+[
+    {
+        "name": "<top-level>",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 92,
+        "endColumn": 1
+    },
+    {
+        "name": "A",
+        "startLine": 4,
+        "startColumn": 1,
+        "endLine": 8,
+        "endColumn": 5
+    },
+    {
+        "name": "f1",
+        "startLine": 8,
+        "startColumn": 5,
+        "endLine": 12,
+        "endColumn": 5
+    },
+    {
+        "name": "f2",
+        "startLine": 12,
+        "startColumn": 5,
+        "endLine": 16,
+        "endColumn": 5
+    },
+    {
+        "name": "get z",
+        "startLine": 16,
+        "startColumn": 5,
+        "endLine": 20,
+        "endColumn": 5
+    },
+    {
+        "name": "set z",
+        "startLine": 20,
+        "startColumn": 5,
+        "endLine": 23,
+        "endColumn": 5
+    },
+    {
+        "name": "get Z",
+        "startLine": 23,
+        "startColumn": 5,
+        "endLine": 27,
+        "endColumn": 5
+    },
+    {
+        "name": "f3",
+        "startLine": 27,
+        "startColumn": 5,
+        "endLine": 31,
+        "endColumn": 5
+    },
+    {
+        "name": "f4",
+        "startLine": 31,
+        "startColumn": 5,
+        "endLine": 35,
+        "endColumn": 5
+    },
+    {
+        "name": "f5",
+        "startLine": 35,
+        "startColumn": 5,
+        "endLine": 39,
+        "endColumn": 5
+    },
+    {
+        "name": "f6",
+        "startLine": 39,
+        "startColumn": 5,
+        "endLine": 43,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed: prop1>",
+        "startLine": 43,
+        "startColumn": 5,
+        "endLine": 47,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed: prop2>",
+        "startLine": 47,
+        "startColumn": 5,
+        "endLine": 51,
+        "endColumn": 5
+    },
+    {
+        "name": "stringLiteral",
+        "startLine": 51,
+        "startColumn": 5,
+        "endLine": 55,
+        "endColumn": 5
+    },
+    {
+        "name": " string Literal ",
+        "startLine": 55,
+        "startColumn": 5,
+        "endLine": 59,
+        "endColumn": 5
+    },
+    {
+        "name": "43",
+        "startLine": 59,
+        "startColumn": 5,
+        "endLine": 63,
+        "endColumn": 5
+    },
+    {
+        "name": "abc",
+        "startLine": 63,
+        "startColumn": 5,
+        "endLine": 67,
+        "endColumn": 5
+    },
+    {
+        "name": " a b c ",
+        "startLine": 67,
+        "startColumn": 5,
+        "endLine": 71,
+        "endColumn": 5
+    },
+    {
+        "name": "44",
+        "startLine": 71,
+        "startColumn": 5,
+        "endLine": 75,
+        "endColumn": 5
+    },
+    {
+        "name": "45",
+        "startLine": 75,
+        "startColumn": 5,
+        "endLine": 79,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed>",
+        "startLine": 79,
+        "startColumn": 5,
+        "endLine": 83,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed: sym>",
+        "startLine": 83,
+        "startColumn": 5,
+        "endLine": 87,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed>",
+        "startLine": 87,
+        "startColumn": 5,
+        "endLine": 91,
+        "endColumn": 5
+    },
+    {
+        "name": "<anonymous>",
+        "startLine": 89,
+        "startColumn": 6,
+        "endLine": 89,
+        "endColumn": 18
+    }
+]

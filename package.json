@@ -1,0 +1,62 @@
+{
+  "name": "@bloomberg/pasta-sourcemaps",
+  "version": "1.0.0",
+  "description": "Pretty (and) Accurate Stack Trace Analysis",
+  "main": "./dist/src/main.js",
+  "types": "./dist/src/main.d.ts",
+  "engines": {
+    "node": ">=8.9"
+  },
+  "engineStrict": true,
+  "files": [
+    "dist/**/*.js",
+    "dist/**/*.d.ts",
+    "!**/*.t.js",
+    "!**/*.t.d.ts"
+  ],
+  "scripts": {
+    "build": "tsc --project ./",
+    "doc": "node ./node_modules/typedoc/bin/typedoc --options typedoc.json src",
+    "test": "cross-env NODE_ENV=development ts-node node_modules/tape/bin/tape tests/**/*.t.ts",
+    "lint": "eslint --ext ts,js .",
+    "prepare": "npm run build",
+    "prepublishOnly": "npm run lint && npm run test"
+  },
+  "devDependencies": {
+    "@types/esprima": "^4.0.2",
+    "@types/tape": "^4.2.33",
+    "@typescript-eslint/eslint-plugin": "^1.0.0",
+    "cross-env": "^5.2.0",
+    "eslint": "^5.12.1",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.15.3",
+    "tape": "^4.9.2",
+    "ts-node": "^7.0.1",
+    "typedoc": "^0.13.0",
+    "typedoc-plugin-sourcefile-url": "^1.0.3"
+  },
+  "dependencies": {
+    "esprima": "^4.0.0",
+    "typescript": "^3.2.2",
+    "vlq": "^1.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bloomberg/pasta-sourcemaps"
+  },
+  "keywords": [
+    "sourcemap",
+    "source map",
+    "stack trace", 
+    "crash stack"
+  ],
+  "author": "Lilit Darbinyan <ldarbinyan@bloomberg.net>",
+  "contributors": [
+    "Hugh Crail <hcrail@bloomberg.net>", 
+    "Maxwell Heiber <mheiber@bloomberg.net>", 
+    "Robert Palmer <rpalmer57@bloomberg.net>", 
+    "Thomas Chetwin <tchetwin@bloomberg.net>" 
+  ],
+  "license": "Apache-2.0"
+}

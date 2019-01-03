@@ -1,0 +1,121 @@
+[
+    {
+        "name": "<top-level>",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 78,
+        "endColumn": 0
+    },
+    {
+        "name": "t1",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 4,
+        "endColumn": 1
+    },
+    {
+        "name": "t2",
+        "startLine": 4,
+        "startColumn": 1,
+        "endLine": 10,
+        "endColumn": 1
+    },
+    {
+        "name": "t3",
+        "startLine": 12,
+        "startColumn": 30,
+        "endLine": 16,
+        "endColumn": 1
+    },
+    {
+        "name": "t4",
+        "startLine": 18,
+        "startColumn": 8,
+        "endLine": 22,
+        "endColumn": 1
+    },
+    {
+        "name": "t5",
+        "startLine": 25,
+        "startColumn": 7,
+        "endLine": 29,
+        "endColumn": 5
+    },
+    {
+        "name": "t6",
+        "startLine": 30,
+        "startColumn": 7,
+        "endLine": 33,
+        "endColumn": 5
+    },
+    {
+        "name": "t7",
+        "startLine": 33,
+        "startColumn": 6,
+        "endLine": 36,
+        "endColumn": 5
+    },
+    {
+        "name": "t8",
+        "startLine": 37,
+        "startColumn": 1,
+        "endLine": 41,
+        "endColumn": 1
+    },
+    {
+        "name": "C",
+        "startLine": 45,
+        "startColumn": 1,
+        "endLine": 46,
+        "endColumn": 36
+    },
+    {
+        "name": "t9",
+        "startLine": 46,
+        "startColumn": 36,
+        "endLine": 51,
+        "endColumn": 5
+    },
+    {
+        "name": "t10",
+        "startLine": 52,
+        "startColumn": 23,
+        "endLine": 52,
+        "endColumn": 50
+    },
+    {
+        "name": "t11",
+        "startLine": 52,
+        "startColumn": 51,
+        "endLine": 57,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed: sym>",
+        "startLine": 57,
+        "startColumn": 5,
+        "endLine": 61,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed>",
+        "startLine": 61,
+        "startColumn": 5,
+        "endLine": 65,
+        "endColumn": 5
+    },
+    {
+        "name": "get z",
+        "startLine": 67,
+        "startColumn": 22,
+        "endLine": 71,
+        "endColumn": 5
+    },
+    {
+        "name": "set z",
+        "startLine": 71,
+        "startColumn": 5,
+        "endLine": 75,
+        "endColumn": 5
+    }
+]

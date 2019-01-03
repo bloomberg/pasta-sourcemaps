@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "sources": ["foo.js", "bar.js", "foobar.js"],
+    "names": ["f1", "x", "y", "z", "<top-level>", "<anonymous>"],
+    "mappings": "AAgBC,SAAQ,CAAEA",
+    "x_com_bloomberg_sourcesFunctionMappings": [
+        "ABCDEFGH", 
+        "ssfefs,JpBcOH,KJEEK,ADOAoB,JKJQzB,CPGKI,CJKEI"
+    ]
+}

@@ -1,0 +1,36 @@
+[
+    [
+        "simple.js",
+        [
+            {
+                "name": "<top-level>",
+                "startLine": 0,
+                "startColumn": 0,
+                "endLine": 11,
+                "endColumn": 6
+            },
+            {
+                "name": "f1",
+                "startLine": 0,
+                "startColumn": 10,
+                "endLine": 3,
+                "endColumn": 1
+            },
+            {
+                "name": "real",
+                "startLine": 3,
+                "startColumn": 1,
+                "endLine": 9,
+                "endColumn": 1
+            },
+            {
+                "name": "<anonymous>",
+                "startLine": 5,
+                "startColumn": 5,
+                "endLine": 7,
+                "endColumn": 6
+            }
+        ]
+    ],
+    ["foo.js", []]
+]

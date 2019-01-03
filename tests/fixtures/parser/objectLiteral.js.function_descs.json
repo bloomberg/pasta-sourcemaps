@@ -1,0 +1,149 @@
+[
+    {
+        "name": "<top-level>",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 63,
+        "endColumn": 2
+    },
+    {
+        "name": "f1",
+        "startLine": 2,
+        "startColumn": 13,
+        "endLine": 5,
+        "endColumn": 5
+    },
+    {
+        "name": "f2",
+        "startLine": 6,
+        "startColumn": 7,
+        "endLine": 8,
+        "endColumn": 5
+    },
+    {
+        "name": "localName",
+        "startLine": 9,
+        "startColumn": 7,
+        "endLine": 11,
+        "endColumn": 5
+    },
+    {
+        "name": "f4",
+        "startLine": 12,
+        "startColumn": 7,
+        "endLine": 14,
+        "endColumn": 5
+    },
+    {
+        "name": "f5",
+        "startLine": 14,
+        "startColumn": 6,
+        "endLine": 17,
+        "endColumn": 5
+    },
+    {
+        "name": "f6",
+        "startLine": 17,
+        "startColumn": 6,
+        "endLine": 20,
+        "endColumn": 5
+    },
+    {
+        "name": "literal",
+        "startLine": 20,
+        "startColumn": 6,
+        "endLine": 23,
+        "endColumn": 5
+    },
+    {
+        "name": "literal2",
+        "startLine": 24,
+        "startColumn": 15,
+        "endLine": 26,
+        "endColumn": 5
+    },
+    {
+        "name": " literal 3 ",
+        "startLine": 26,
+        "startColumn": 6,
+        "endLine": 29,
+        "endColumn": 5
+    },
+    {
+        "name": " literail 4 ",
+        "startLine": 30,
+        "startColumn": 19,
+        "endLine": 32,
+        "endColumn": 5
+    },
+    {
+        "name": "42",
+        "startLine": 32,
+        "startColumn": 6,
+        "endLine": 35,
+        "endColumn": 5
+    },
+    {
+        "name": "43",
+        "startLine": 36,
+        "startColumn": 7,
+        "endLine": 38,
+        "endColumn": 5
+    },
+    {
+        "name": "44",
+        "startLine": 38,
+        "startColumn": 6,
+        "endLine": 41,
+        "endColumn": 5
+    },
+    {
+        "name": "45",
+        "startLine": 41,
+        "startColumn": 6,
+        "endLine": 44,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed: prop1>",
+        "startLine": 44,
+        "startColumn": 6,
+        "endLine": 47,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed: prop2>",
+        "startLine": 47,
+        "startColumn": 6,
+        "endLine": 50,
+        "endColumn": 5
+    },
+    {
+        "name": "abc",
+        "startLine": 50,
+        "startColumn": 6,
+        "endLine": 53,
+        "endColumn": 5
+    },
+    {
+        "name": "abc d",
+        "startLine": 53,
+        "startColumn": 6,
+        "endLine": 56,
+        "endColumn": 5
+    },
+    {
+        "name": " a b c ",
+        "startLine": 56,
+        "startColumn": 6,
+        "endLine": 59,
+        "endColumn": 5
+    },
+    {
+        "name": "<computed>",
+        "startLine": 59,
+        "startColumn": 6,
+        "endLine": 62,
+        "endColumn": 5
+    }
+]

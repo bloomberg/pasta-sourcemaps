@@ -1,0 +1,6 @@
+{
+    "version": 3,
+    "sources": ["foo.js", "bar.js"],
+    "names": ["f1", "f2", "f3", "f4", "f5", "Foo", "Bar", "bar1", "bar2"],
+    "mappings": "AAgBC,SAAQ,CAAEA"
+}

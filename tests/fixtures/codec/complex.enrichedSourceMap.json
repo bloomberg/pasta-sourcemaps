@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "sources": ["complex.js"],
+    "names": ["f1", "x", "y", "z", "<top-level>", "<anonymous>"],
+    "mappings": "AAgBC,SAAQ,CAAEA",
+    "x_com_bloomberg_sourcesFunctionMappings": [
+        "IAAoBI,JpBAOH,KJKEK,ADeAoB,JKbQzB,CPIKI,CJIEI"
+    ]
+}

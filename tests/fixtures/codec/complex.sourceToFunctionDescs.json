@@ -1,0 +1,56 @@
+[
+    [
+        "complex.js",
+        [
+            {
+                "name": "<top-level>",
+                "startLine": 0,
+                "startColumn": 0,
+                "endLine": 20,
+                "endColumn": 4
+            },
+            {
+                "name": "f1",
+                "startLine": 0,
+                "startColumn": 0,
+                "endLine": 7,
+                "endColumn": 1
+            },
+            {
+                "name": "<anonymous>",
+                "startLine": 3,
+                "startColumn": 5,
+                "endLine": 5,
+                "endColumn": 6
+            },
+            {
+                "name": "<anonymous>",
+                "startLine": 4,
+                "startColumn": 20,
+                "endLine": 4,
+                "endColumn": 26
+            },
+            {
+                "name": "x",
+                "startLine": 9,
+                "startColumn": 7,
+                "endLine": 17,
+                "endColumn": 1
+            },
+            {
+                "name": "y",
+                "startLine": 10,
+                "startColumn": 11,
+                "endLine": 15,
+                "endColumn": 5
+            },
+            {
+                "name": "z",
+                "startLine": 11,
+                "startColumn": 15,
+                "endLine": 13,
+                "endColumn": 9
+            }
+        ]
+    ]
+]

@@ -1,0 +1,6 @@
+{
+    "version": 3,
+    "sources": ["complex.js"],
+    "names": ["f1", "x", "y", "z"],
+    "mappings": "AAgBC,SAAQ,CAAEA"
+}

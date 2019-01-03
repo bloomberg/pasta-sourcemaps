@@ -1,0 +1,7 @@
+class B {
+    f: function() {
+        //..
+    }
+}
+ 
+

@@ -1,0 +1,51 @@
+[
+    {
+        "name": "<top-level>",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 17,
+        "endColumn": 1
+    },
+    {
+        "name": "f1",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 17,
+        "endColumn": 1
+    },
+    {
+        "name": "f2",
+        "startLine": 1,
+        "startColumn": 1,
+        "endLine": 9,
+        "endColumn": 5
+    },
+    {
+        "name": "<anonymous>",
+        "startLine": 4,
+        "startColumn": 20,
+        "endLine": 4,
+        "endColumn": 26
+    },
+    {
+        "name": "f3",
+        "startLine": 4,
+        "startColumn": 28,
+        "endLine": 8,
+        "endColumn": 9
+    },
+    {
+        "name": "<anonymous>",
+        "startLine": 12,
+        "startColumn": 5,
+        "endLine": 14,
+        "endColumn": 6
+    },
+    {
+        "name": "<anonymous>",
+        "startLine": 16,
+        "startColumn": 17,
+        "endLine": 16,
+        "endColumn": 23
+    }
+]

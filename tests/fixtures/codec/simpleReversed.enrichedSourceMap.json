@@ -1,0 +1,20 @@
+{
+    "version": 3,
+    "sources": ["foo.js", "simple.js", "bob.js"],
+    "names": [
+        "src",
+        "maps",
+        "are",
+        "real",
+        "fun",
+        "<anonymous>",
+        "f1",
+        "<top-level>"
+    ],
+    "mappings": "AAgBC,SAAQ,CAAEA",
+    "x_com_bloomberg_sourcesFunctionMappings": [
+        "",
+        "OAAWM,DXUGL,HATMA,EJIEK",
+        null
+    ]
+}

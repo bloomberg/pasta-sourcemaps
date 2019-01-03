@@ -1,0 +1,6 @@
+{
+    "version": 3,
+    "sources": ["foo.js", "simple.js", "bob.js"],
+    "names": ["src", "maps", "are", "real", "fun"],
+    "mappings": "AAgBC,SAAQ,CAAEA"
+}

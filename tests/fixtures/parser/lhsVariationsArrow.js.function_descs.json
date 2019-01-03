@@ -1,0 +1,170 @@
+[
+    {
+        "name": "<top-level>",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 86,
+        "endColumn": 0
+    },
+    {
+        "name": "f",
+        "startLine": 0,
+        "startColumn": 7,
+        "endLine": 2,
+        "endColumn": 1
+    },
+    {
+        "name": "a.b",
+        "startLine": 4,
+        "startColumn": 5,
+        "endLine": 6,
+        "endColumn": 1
+    },
+    {
+        "name": "a.b.c",
+        "startLine": 8,
+        "startColumn": 7,
+        "endLine": 10,
+        "endColumn": 1
+    },
+    {
+        "name": "a.<computed: b>",
+        "startLine": 12,
+        "startColumn": 6,
+        "endLine": 14,
+        "endColumn": 1
+    },
+    {
+        "name": "a.<computed: b>",
+        "startLine": 16,
+        "startColumn": 8,
+        "endLine": 18,
+        "endColumn": 1
+    },
+    {
+        "name": "a.b",
+        "startLine": 20,
+        "startColumn": 8,
+        "endLine": 22,
+        "endColumn": 1
+    },
+    {
+        "name": "a.b",
+        "startLine": 24,
+        "startColumn": 10,
+        "endLine": 26,
+        "endColumn": 1
+    },
+    {
+        "name": "a. b ",
+        "startLine": 28,
+        "startColumn": 10,
+        "endLine": 30,
+        "endColumn": 1
+    },
+    {
+        "name": "a.42",
+        "startLine": 32,
+        "startColumn": 7,
+        "endLine": 34,
+        "endColumn": 1
+    },
+    {
+        "name": "a.42",
+        "startLine": 36,
+        "startColumn": 9,
+        "endLine": 38,
+        "endColumn": 1
+    },
+    {
+        "name": "a.<computed>",
+        "startLine": 40,
+        "startColumn": 8,
+        "endLine": 42,
+        "endColumn": 1
+    },
+    {
+        "name": "a.<computed>",
+        "startLine": 44,
+        "startColumn": 9,
+        "endLine": 46,
+        "endColumn": 1
+    },
+    {
+        "name": "a.b.<computed>.f",
+        "startLine": 48,
+        "startColumn": 16,
+        "endLine": 50,
+        "endColumn": 1
+    },
+    {
+        "name": "a.b.42",
+        "startLine": 52,
+        "startColumn": 12,
+        "endLine": 54,
+        "endColumn": 1
+    },
+    {
+        "name": "a.b.c.42.d.<computed: e>",
+        "startLine": 56,
+        "startColumn": 19,
+        "endLine": 58,
+        "endColumn": 1
+    },
+    {
+        "name": "a.<computed>",
+        "startLine": 60,
+        "startColumn": 18,
+        "endLine": 62,
+        "endColumn": 1
+    },
+    {
+        "name": "a.b.<computed>",
+        "startLine": 64,
+        "startColumn": 20,
+        "endLine": 66,
+        "endColumn": 1
+    },
+    {
+        "name": "a.<computed>.b",
+        "startLine": 68,
+        "startColumn": 20,
+        "endLine": 70,
+        "endColumn": 1
+    },
+    {
+        "name": "a.<computed>.b.<computed>",
+        "startLine": 72,
+        "startColumn": 38,
+        "endLine": 74,
+        "endColumn": 1
+    },
+    {
+        "name": "<anonymous>",
+        "startLine": 76,
+        "startColumn": 3,
+        "endLine": 76,
+        "endColumn": 27
+    },
+    {
+        "name": "a.<computed>",
+        "startLine": 76,
+        "startColumn": 33,
+        "endLine": 78,
+        "endColumn": 1
+    },
+    {
+        "name": "<anonymous>",
+        "startLine": 80,
+        "startColumn": 12,
+        "endLine": 82,
+        "endColumn": 1
+    },
+    {
+        "name": "<anonymous>",
+        "startLine": 85,
+        "startColumn": 11,
+        "endLine": 85,
+        "endColumn": 20
+    }
+]

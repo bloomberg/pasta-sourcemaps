@@ -1,0 +1,23 @@
+[
+    {
+        "name": "<top-level>",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 17,
+        "endColumn": 0
+    },
+    {
+        "name": "createElement",
+        "startLine": 11,
+        "startColumn": 18,
+        "endLine": 11,
+        "endColumn": 27
+    },
+    {
+        "name": "bar",
+        "startLine": 14,
+        "startColumn": 11,
+        "endLine": 14,
+        "endColumn": 24
+    }
+]
