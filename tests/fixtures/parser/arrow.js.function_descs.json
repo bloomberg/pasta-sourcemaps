@@ -42,7 +42,7 @@
         "endColumn": 1
     },
     {
-        "name": "f4",
+        "name": "obj.f4",
         "startLine": 19,
         "startColumn": 7,
         "endLine": 21,

@@ -1,0 +1,184 @@
+[
+    {
+        "name": "<top-level>",
+        "startLine": 0,
+        "startColumn": 0,
+        "endLine": 112,
+        "endColumn": 0
+    },
+    {
+        "name": "obj1.a1.a2.a3",
+        "startLine": 6,
+        "startColumn": 15,
+        "endLine": 6,
+        "endColumn": 29
+    },
+    {
+        "name": "obj1.a1.a2.a4",
+        "startLine": 7,
+        "startColumn": 15,
+        "endLine": 7,
+        "endColumn": 24
+    },
+    {
+        "name": "obj1.a1.a2.a5",
+        "startLine": 7,
+        "startColumn": 25,
+        "endLine": 8,
+        "endColumn": 19
+    },
+    {
+        "name": "localName",
+        "startLine": 9,
+        "startColumn": 15,
+        "endLine": 9,
+        "endColumn": 39
+    },
+    {
+        "name": "obj1.<computed>.42.43.literal1.literal2.<computed: prop>",
+        "startLine": 18,
+        "startColumn": 31,
+        "endLine": 18,
+        "endColumn": 45
+    },
+    {
+        "name": "obj1.<computed>.42.43.literal1.literal2.f1",
+        "startLine": 18,
+        "startColumn": 46,
+        "endLine": 19,
+        "endColumn": 30
+    },
+    {
+        "name": "obj2.a1.a2.a3",
+        "startLine": 32,
+        "startColumn": 15,
+        "endLine": 32,
+        "endColumn": 29
+    },
+    {
+        "name": "obj2.a1.a2.a4",
+        "startLine": 33,
+        "startColumn": 15,
+        "endLine": 33,
+        "endColumn": 24
+    },
+    {
+        "name": "obj2.a1.a2.a5",
+        "startLine": 33,
+        "startColumn": 25,
+        "endLine": 34,
+        "endColumn": 19
+    },
+    {
+        "name": "localName",
+        "startLine": 35,
+        "startColumn": 15,
+        "endLine": 35,
+        "endColumn": 39
+    },
+    {
+        "name": "obj2.<computed>.42.43.literal1.literal2.<computed: prop>",
+        "startLine": 44,
+        "startColumn": 31,
+        "endLine": 44,
+        "endColumn": 45
+    },
+    {
+        "name": "obj2.<computed>.42.43.literal1.literal2.f1",
+        "startLine": 44,
+        "startColumn": 46,
+        "endLine": 45,
+        "endColumn": 30
+    },
+    {
+        "name": "f",
+        "startLine": 51,
+        "startColumn": 2,
+        "endLine": 54,
+        "endColumn": 16
+    },
+    {
+        "name": "<Object>.a1.a2.a3",
+        "startLine": 59,
+        "startColumn": 15,
+        "endLine": 59,
+        "endColumn": 29
+    },
+    {
+        "name": "<Object>.a1.a2.a4",
+        "startLine": 60,
+        "startColumn": 15,
+        "endLine": 60,
+        "endColumn": 24
+    },
+    {
+        "name": "<Object>.a1.a2.a5",
+        "startLine": 60,
+        "startColumn": 25,
+        "endLine": 61,
+        "endColumn": 19
+    },
+    {
+        "name": "localName",
+        "startLine": 62,
+        "startColumn": 15,
+        "endLine": 62,
+        "endColumn": 39
+    },
+    {
+        "name": "<Object>.<computed>.42.43.literal1.literal2.<computed: prop>",
+        "startLine": 71,
+        "startColumn": 31,
+        "endLine": 71,
+        "endColumn": 45
+    },
+    {
+        "name": "<Object>.<computed>.42.43.literal1.literal2.f1",
+        "startLine": 71,
+        "startColumn": 46,
+        "endLine": 72,
+        "endColumn": 30
+    },
+    {
+        "name": "<Object>.a.c",
+        "startLine": 83,
+        "startColumn": 10,
+        "endLine": 83,
+        "endColumn": 24
+    },
+    {
+        "name": "<Object>.b.c",
+        "startLine": 86,
+        "startColumn": 10,
+        "endLine": 86,
+        "endColumn": 24
+    },
+    {
+        "name": "a.b.c.d.e",
+        "startLine": 93,
+        "startColumn": 10,
+        "endLine": 93,
+        "endColumn": 23
+    },
+    {
+        "name": "a.b.c.d.f",
+        "startLine": 93,
+        "startColumn": 24,
+        "endLine": 94,
+        "endColumn": 14
+    },
+    {
+        "name": "a.<computed: b>.literal.c.<computed>.42.43.literal1.literal2.<computed: prop>",
+        "startLine": 104,
+        "startColumn": 31,
+        "endLine": 104,
+        "endColumn": 45
+    },
+    {
+        "name": "a.<computed: b>.literal.c.<computed>.42.43.literal1.literal2.f1",
+        "startLine": 104,
+        "startColumn": 46,
+        "endLine": 105,
+        "endColumn": 30
+    }
+]

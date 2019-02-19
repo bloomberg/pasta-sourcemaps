@@ -21,14 +21,14 @@
         "endColumn": 1
     },
     {
-        "name": "f3",
+        "name": "obj.f3",
         "startLine": 12,
         "startColumn": 13,
         "endLine": 15,
         "endColumn": 5
     },
     {
-        "name": "f4",
+        "name": "MyClass.prototype.f4",
         "startLine": 19,
         "startColumn": 15,
         "endLine": 22,

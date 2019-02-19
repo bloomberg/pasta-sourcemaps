@@ -31,6 +31,7 @@ test("parser module tests", (t) => {
         ["nesting.js", "ECMAScript"],
         ["class.js", "ECMAScript"],
         ["objectLiteral.js", "ECMAScript"],
+        ["objectLiteralNesting.js", "ECMAScript"],
         ["typescript.ts", "TypeScript"],
         ["class.ts", "TypeScript"],
         ["simple.tsx", "TSX"],
@@ -38,6 +39,7 @@ test("parser module tests", (t) => {
         ["lhsVariations.js", "ECMAScript"],
         ["lhsVariationsArrow.js", "ECMAScript"],
         ["lhsVariationsLocalName.js", "ECMAScript"],
+        ["classVariations.ts", "TypeScript"],
     ];
 
     t.plan(CASES.length);

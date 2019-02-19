@@ -7,7 +7,7 @@
         "endColumn": 0
     },
     {
-        "name": "createElement",
+        "name": "React.createElement",
         "startLine": 11,
         "startColumn": 18,
         "endLine": 11,

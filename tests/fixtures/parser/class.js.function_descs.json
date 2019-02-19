@@ -3,168 +3,210 @@
         "name": "<top-level>",
         "startLine": 0,
         "startColumn": 0,
-        "endLine": 92,
+        "endLine": 117,
         "endColumn": 1
     },
     {
         "name": "A",
-        "startLine": 4,
+        "startLine": 5,
         "startColumn": 1,
-        "endLine": 8,
+        "endLine": 9,
         "endColumn": 5
     },
     {
-        "name": "f1",
-        "startLine": 8,
+        "name": "A.prototype.f1",
+        "startLine": 9,
         "startColumn": 5,
-        "endLine": 12,
+        "endLine": 13,
         "endColumn": 5
     },
     {
-        "name": "f2",
-        "startLine": 12,
+        "name": "A.f2",
+        "startLine": 13,
         "startColumn": 5,
-        "endLine": 16,
+        "endLine": 17,
         "endColumn": 5
     },
     {
-        "name": "get z",
-        "startLine": 16,
+        "name": "A.prototype.get z",
+        "startLine": 17,
         "startColumn": 5,
-        "endLine": 20,
+        "endLine": 21,
         "endColumn": 5
     },
     {
-        "name": "set z",
-        "startLine": 20,
+        "name": "A.prototype.set z",
+        "startLine": 21,
         "startColumn": 5,
-        "endLine": 23,
+        "endLine": 24,
         "endColumn": 5
     },
     {
-        "name": "get Z",
-        "startLine": 23,
+        "name": "A.get Z",
+        "startLine": 24,
         "startColumn": 5,
-        "endLine": 27,
+        "endLine": 28,
         "endColumn": 5
     },
     {
-        "name": "f3",
-        "startLine": 27,
+        "name": "A.prototype.f3",
+        "startLine": 28,
         "startColumn": 5,
-        "endLine": 31,
+        "endLine": 32,
         "endColumn": 5
     },
     {
-        "name": "f4",
-        "startLine": 31,
+        "name": "A.f4",
+        "startLine": 32,
         "startColumn": 5,
-        "endLine": 35,
+        "endLine": 36,
         "endColumn": 5
     },
     {
-        "name": "f5",
-        "startLine": 35,
+        "name": "A.prototype.f5",
+        "startLine": 36,
         "startColumn": 5,
-        "endLine": 39,
+        "endLine": 40,
         "endColumn": 5
     },
     {
-        "name": "f6",
-        "startLine": 39,
+        "name": "A.f6",
+        "startLine": 40,
         "startColumn": 5,
-        "endLine": 43,
+        "endLine": 44,
         "endColumn": 5
     },
     {
-        "name": "<computed: prop1>",
-        "startLine": 43,
+        "name": "A.prototype.<computed: prop1>",
+        "startLine": 44,
         "startColumn": 5,
-        "endLine": 47,
+        "endLine": 48,
         "endColumn": 5
     },
     {
-        "name": "<computed: prop2>",
-        "startLine": 47,
+        "name": "A.prototype.<computed: prop2>",
+        "startLine": 48,
         "startColumn": 5,
-        "endLine": 51,
+        "endLine": 52,
         "endColumn": 5
     },
     {
-        "name": "stringLiteral",
-        "startLine": 51,
+        "name": "A.<computed: prop3>",
+        "startLine": 52,
         "startColumn": 5,
-        "endLine": 55,
+        "endLine": 56,
         "endColumn": 5
     },
     {
-        "name": " string Literal ",
-        "startLine": 55,
+        "name": "A.prototype.stringLiteral",
+        "startLine": 56,
         "startColumn": 5,
-        "endLine": 59,
+        "endLine": 60,
         "endColumn": 5
     },
     {
-        "name": "43",
-        "startLine": 59,
+        "name": "A.prototype. string Literal ",
+        "startLine": 60,
         "startColumn": 5,
-        "endLine": 63,
+        "endLine": 64,
         "endColumn": 5
     },
     {
-        "name": "abc",
-        "startLine": 63,
+        "name": "A.stringLiteral2",
+        "startLine": 64,
         "startColumn": 5,
-        "endLine": 67,
+        "endLine": 68,
         "endColumn": 5
     },
     {
-        "name": " a b c ",
-        "startLine": 67,
+        "name": "A.prototype.abc",
+        "startLine": 68,
         "startColumn": 5,
-        "endLine": 71,
+        "endLine": 72,
         "endColumn": 5
     },
     {
-        "name": "44",
-        "startLine": 71,
+        "name": "A.prototype. a b c ",
+        "startLine": 72,
         "startColumn": 5,
-        "endLine": 75,
+        "endLine": 76,
         "endColumn": 5
     },
     {
-        "name": "45",
-        "startLine": 75,
+        "name": "A.def",
+        "startLine": 76,
         "startColumn": 5,
-        "endLine": 79,
+        "endLine": 80,
         "endColumn": 5
     },
     {
-        "name": "<computed>",
-        "startLine": 79,
+        "name": "A.prototype.43",
+        "startLine": 80,
         "startColumn": 5,
-        "endLine": 83,
+        "endLine": 84,
         "endColumn": 5
     },
     {
-        "name": "<computed: sym>",
-        "startLine": 83,
+        "name": "A.42",
+        "startLine": 84,
         "startColumn": 5,
-        "endLine": 87,
+        "endLine": 88,
         "endColumn": 5
     },
     {
-        "name": "<computed>",
-        "startLine": 87,
+        "name": "A.prototype.44",
+        "startLine": 88,
         "startColumn": 5,
-        "endLine": 91,
+        "endLine": 92,
+        "endColumn": 5
+    },
+    {
+        "name": "A.prototype.45",
+        "startLine": 92,
+        "startColumn": 5,
+        "endLine": 96,
+        "endColumn": 5
+    },
+    {
+        "name": "A.46",
+        "startLine": 96,
+        "startColumn": 5,
+        "endLine": 100,
+        "endColumn": 5
+    },
+    {
+        "name": "A.prototype.<computed>",
+        "startLine": 100,
+        "startColumn": 5,
+        "endLine": 104,
+        "endColumn": 5
+    },
+    {
+        "name": "A.<computed>",
+        "startLine": 104,
+        "startColumn": 5,
+        "endLine": 108,
+        "endColumn": 5
+    },
+    {
+        "name": "A.prototype.<computed: sym>",
+        "startLine": 108,
+        "startColumn": 5,
+        "endLine": 112,
+        "endColumn": 5
+    },
+    {
+        "name": "A.prototype.<computed>",
+        "startLine": 112,
+        "startColumn": 5,
+        "endLine": 116,
         "endColumn": 5
     },
     {
         "name": "<anonymous>",
-        "startLine": 89,
+        "startLine": 114,
         "startColumn": 6,
-        "endLine": 89,
+        "endLine": 114,
         "endColumn": 18
     }
 ]

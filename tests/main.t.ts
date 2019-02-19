@@ -56,14 +56,14 @@ test("integration test", (t) => {
     t.deepEqual(decoder.decode("foo.js", 17, 5), "f5");
     t.deepEqual(decoder.decode("foo.js", 19, 5), "<anonymous>");
     t.deepEqual(decoder.decode("foo.js", 27, 5), "Foo");
-    t.deepEqual(decoder.decode("foo.js", 30, 5), "method1");
-    t.deepEqual(decoder.decode("foo.js", 33, 5), "get prop");
-    t.deepEqual(decoder.decode("foo.js", 36, 5), "set prop");
+    t.deepEqual(decoder.decode("foo.js", 30, 5), "Foo.prototype.method1");
+    t.deepEqual(decoder.decode("foo.js", 33, 5), "Foo.prototype.get prop");
+    t.deepEqual(decoder.decode("foo.js", 36, 5), "Foo.prototype.set prop");
     t.deepEqual(decoder.decode("foo.js", 4, 0), "<top-level>");
 
     t.deepEqual(decoder.decode("bar.js", 2, 5), "Bar");
-    t.deepEqual(decoder.decode("bar.js", 6, 5), "get prop");
-    t.deepEqual(decoder.decode("bar.js", 9, 5), "set prop");
+    t.deepEqual(decoder.decode("bar.js", 6, 5), "Bar.prototype.get prop");
+    t.deepEqual(decoder.decode("bar.js", 9, 5), "Bar.prototype.set prop");
     t.deepEqual(decoder.decode("bar.js", 14, 5), "f1");
     t.deepEqual(decoder.decode("bar.js", 18, 5), "bar1");
     t.deepEqual(decoder.decode("bar.js", 22, 5), "bar2");
