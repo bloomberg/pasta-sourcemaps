@@ -37,8 +37,10 @@ function names_. This hinders debugging and confuses automatic crash stack conso
 
 ## Installation
 
+Note: We have not yet published this package to npmjs.org, so for now you can install directly from the repository.
+
 ```bash
-npm install @bloomberg/pasta-sourcemaps
+npm install https://github.com/bloomberg/pasta-sourcemaps
 ```
 
 ## API
