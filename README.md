@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/bloomberg/pasta-sourcemaps.svg?branch=master)](https://travis-ci.org/bloomberg/pasta-sourcemaps)
+[![Build Status](https://travis-ci.com/bloomberg/pasta-sourcemaps.svg?branch=master)](https://travis-ci.com/bloomberg/pasta-sourcemaps)
 
 # pasta-sourcemaps
 
