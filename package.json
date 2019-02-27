@@ -48,15 +48,15 @@
   "keywords": [
     "sourcemap",
     "source map",
-    "stack trace", 
+    "stack trace",
     "crash stack"
   ],
   "author": "Lilit Darbinyan <ldarbinyan@bloomberg.net>",
   "contributors": [
-    "Hugh Crail <hcrail@bloomberg.net>", 
-    "Maxwell Heiber <mheiber@bloomberg.net>", 
-    "Robert Palmer <rpalmer57@bloomberg.net>", 
-    "Thomas Chetwin <tchetwin@bloomberg.net>" 
+    "Hugh Crail <hcrail@bloomberg.net>",
+    "Maxwell Heiber <mheiber@bloomberg.net>",
+    "Robert Palmer <rpalmer57@bloomberg.net>",
+    "Thomas Chetwin <tchetwin@bloomberg.net>"
   ],
   "license": "Apache-2.0"
 }
