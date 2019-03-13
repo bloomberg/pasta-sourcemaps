@@ -1,6 +1,6 @@
 <img src="assets/pasta_128.png" align="right"/>
 
-# pasta-sourcemaps
+# @bloomberg/pasta-sourcemaps
 
 [![Build Status](https://travis-ci.com/bloomberg/pasta-sourcemaps.svg?branch=master)](https://travis-ci.org/bloomberg/pasta-sourcemaps)
 
@@ -45,7 +45,7 @@ npm install @bloomberg/pasta-sourcemaps
 
 ## API
 
-`pasta-sourcemaps` exposes three utilities:
+`@bloomberg/pasta-sourcemaps` exposes three utilities:
 - [parser](src/parser.ts)
 - [encoder](src/encoder.ts)
 - [decoder](src/decoder.ts)
