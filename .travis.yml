@@ -15,7 +15,8 @@ script:
 branches:
   only:
   - master
-
+  - /^v\d+\.\d+(\.\d+)?(-\S*)?$/
+  
 deploy:
   provider: npm
   email: ossbuild@bloomberg.net
