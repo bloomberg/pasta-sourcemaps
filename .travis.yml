@@ -1,6 +1,3 @@
-before_install:
-  - npm i -g makeshift && makeshift -s @bloomberg -r registry.npmjs.org
-
 language: node_js
 
 node_js:
@@ -12,6 +9,7 @@ script:
   - npm run lint
   - npm run test
 
+before_deploy: "npm i -g makeshift && makeshift -s @bloomberg -r registry.npmjs.org"
 deploy:
   provider: npm
   email: ossbuild@bloomberg.net
