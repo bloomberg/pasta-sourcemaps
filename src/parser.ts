@@ -18,7 +18,6 @@ import { FunctionDesc } from "../src/functionDesc";
 import { FileType } from "./types";
 
 import * as ts from "typescript";
-const esprima: typeof import("esprima") = require("esprima");
 
 /**
  * Parse a source file and return descriptions of all functions present in the
@@ -58,34 +57,10 @@ function parseTS(source: string, filetype: FileType): FunctionDesc[] {
         true, // setParentNodes
         scriptKind
     );
-    switch (filetype) {
-        case "TypeScript":
-        case "TSX":
-        case "JSX":
-            validateTypeScript(tsSource);
-            break;
-        case "ECMAScript":
-            validateECMAScript(source);
-            break;
-    }
+    validateScript(tsSource);
     const topLevelDesc = visitSourceNode(tsSource);
     const otherDescs = traverseNode(tsSource);
     return [topLevelDesc, ...otherDescs];
-}
-
-function validateECMAScript(source: string) {
-    // We don't know if the input will be a module or script.
-    // So we try parsing it as a module, and, failing that, as a script
-    try {
-        esprima.parseModule(source);
-    } catch (e1) {
-        try {
-            esprima.parseScript(source);
-        } catch (e2) {
-            e1.message = `Syntax error in source, ${e1.message}`;
-            throw e1;
-        }
-    }
 }
 
 let _program: ts.Program;
@@ -93,7 +68,7 @@ function getExpensiveProgram() {
     return _program || (_program = ts.createProgram([""], {}));
 }
 
-function validateTypeScript(tsSource: ts.SourceFile) {
+function validateScript(tsSource: ts.SourceFile) {
     const program = getExpensiveProgram();
     const diag = program.getSyntacticDiagnostics(tsSource);
     if (diag.length > 0) {

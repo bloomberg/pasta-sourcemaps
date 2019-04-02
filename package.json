@@ -23,7 +23,6 @@
     "prepublishOnly": "npm run lint && npm run test"
   },
   "devDependencies": {
-    "@types/esprima": "^4.0.2",
     "@types/tape": "^4.2.33",
     "@typescript-eslint/eslint-plugin": "^1.0.0",
     "cross-env": "^5.2.0",
@@ -37,7 +36,6 @@
     "typedoc-plugin-sourcefile-url": "^1.0.3"
   },
   "dependencies": {
-    "esprima": "^4.0.0",
     "typescript": "^3.2.2",
     "vlq": "^1.0.0"
   },
