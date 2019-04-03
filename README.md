@@ -2,6 +2,7 @@
 
 # @bloomberg/pasta-sourcemaps
 
+[![npm Badge](https://img.shields.io/npm/v/@bloomberg/pasta-sourcemaps.svg)](https://www.npmjs.com/package/@bloomberg/pasta-sourcemaps)
 [![Build Status](https://travis-ci.com/bloomberg/pasta-sourcemaps.svg?branch=master)](https://travis-ci.com/bloomberg/pasta-sourcemaps)
 
 `pasta`, or Pretty (and) Accurate Stack Trace Analysis, is an implementation of an extension to the source map format that allows for accurate function name decoding. It allows you to extract function-related metadata from a source file and encode it into a source map, as well as decode a pasta-enriched source map to query enclosing function names for a given location. 
