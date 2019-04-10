@@ -7,7 +7,9 @@ let obj1 = {
             a3: function() {},              // obj1.a1.a2.a3
             a4: () => {},                   // obj1.a1.a2.a4
             a5() {},                        // obj1.a1.a2.a5
-            a6: function localName() {}     // localName
+            a6: function localName() {},    // localName
+            get a7(){return 1;},            // obj1.a1.a2.get a7
+            set a7(p){}                     // obj1.a1.a2.set a7
         }
     },
 

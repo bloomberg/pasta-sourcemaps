@@ -3,7 +3,7 @@
         "name": "<top-level>",
         "startLine": 0,
         "startColumn": 0,
-        "endLine": 112,
+        "endLine": 114,
         "endColumn": 0
     },
     {
@@ -35,150 +35,164 @@
         "endColumn": 39
     },
     {
+        "name": "obj1.a1.a2.get a7",
+        "startLine": 9,
+        "startColumn": 40,
+        "endLine": 10,
+        "endColumn": 31
+    },
+    {
+        "name": "obj1.a1.a2.set a7",
+        "startLine": 10,
+        "startColumn": 32,
+        "endLine": 11,
+        "endColumn": 23
+    },
+    {
         "name": "obj1.<computed>.42.43.literal1.literal2.<computed: prop>",
-        "startLine": 18,
+        "startLine": 20,
         "startColumn": 31,
-        "endLine": 18,
+        "endLine": 20,
         "endColumn": 45
     },
     {
         "name": "obj1.<computed>.42.43.literal1.literal2.f1",
-        "startLine": 18,
+        "startLine": 20,
         "startColumn": 46,
-        "endLine": 19,
+        "endLine": 21,
         "endColumn": 30
     },
     {
         "name": "obj2.a1.a2.a3",
-        "startLine": 32,
+        "startLine": 34,
         "startColumn": 15,
-        "endLine": 32,
+        "endLine": 34,
         "endColumn": 29
     },
     {
         "name": "obj2.a1.a2.a4",
-        "startLine": 33,
+        "startLine": 35,
         "startColumn": 15,
-        "endLine": 33,
+        "endLine": 35,
         "endColumn": 24
     },
     {
         "name": "obj2.a1.a2.a5",
-        "startLine": 33,
+        "startLine": 35,
         "startColumn": 25,
-        "endLine": 34,
+        "endLine": 36,
         "endColumn": 19
     },
     {
         "name": "localName",
-        "startLine": 35,
+        "startLine": 37,
         "startColumn": 15,
-        "endLine": 35,
+        "endLine": 37,
         "endColumn": 39
     },
     {
         "name": "obj2.<computed>.42.43.literal1.literal2.<computed: prop>",
-        "startLine": 44,
+        "startLine": 46,
         "startColumn": 31,
-        "endLine": 44,
+        "endLine": 46,
         "endColumn": 45
     },
     {
         "name": "obj2.<computed>.42.43.literal1.literal2.f1",
-        "startLine": 44,
+        "startLine": 46,
         "startColumn": 46,
-        "endLine": 45,
+        "endLine": 47,
         "endColumn": 30
     },
     {
         "name": "f",
-        "startLine": 51,
+        "startLine": 53,
         "startColumn": 2,
-        "endLine": 54,
+        "endLine": 56,
         "endColumn": 16
     },
     {
         "name": "<Object>.a1.a2.a3",
-        "startLine": 59,
+        "startLine": 61,
         "startColumn": 15,
-        "endLine": 59,
+        "endLine": 61,
         "endColumn": 29
     },
     {
         "name": "<Object>.a1.a2.a4",
-        "startLine": 60,
+        "startLine": 62,
         "startColumn": 15,
-        "endLine": 60,
+        "endLine": 62,
         "endColumn": 24
     },
     {
         "name": "<Object>.a1.a2.a5",
-        "startLine": 60,
+        "startLine": 62,
         "startColumn": 25,
-        "endLine": 61,
+        "endLine": 63,
         "endColumn": 19
     },
     {
         "name": "localName",
-        "startLine": 62,
+        "startLine": 64,
         "startColumn": 15,
-        "endLine": 62,
+        "endLine": 64,
         "endColumn": 39
     },
     {
         "name": "<Object>.<computed>.42.43.literal1.literal2.<computed: prop>",
-        "startLine": 71,
+        "startLine": 73,
         "startColumn": 31,
-        "endLine": 71,
+        "endLine": 73,
         "endColumn": 45
     },
     {
         "name": "<Object>.<computed>.42.43.literal1.literal2.f1",
-        "startLine": 71,
+        "startLine": 73,
         "startColumn": 46,
-        "endLine": 72,
+        "endLine": 74,
         "endColumn": 30
     },
     {
         "name": "<Object>.a.c",
-        "startLine": 83,
+        "startLine": 85,
         "startColumn": 10,
-        "endLine": 83,
+        "endLine": 85,
         "endColumn": 24
     },
     {
         "name": "<Object>.b.c",
-        "startLine": 86,
+        "startLine": 88,
         "startColumn": 10,
-        "endLine": 86,
+        "endLine": 88,
         "endColumn": 24
     },
     {
         "name": "a.b.c.d.e",
-        "startLine": 93,
+        "startLine": 95,
         "startColumn": 10,
-        "endLine": 93,
+        "endLine": 95,
         "endColumn": 23
     },
     {
         "name": "a.b.c.d.f",
-        "startLine": 93,
+        "startLine": 95,
         "startColumn": 24,
-        "endLine": 94,
+        "endLine": 96,
         "endColumn": 14
     },
     {
         "name": "a.<computed: b>.literal.c.<computed>.42.43.literal1.literal2.<computed: prop>",
-        "startLine": 104,
+        "startLine": 106,
         "startColumn": 31,
-        "endLine": 104,
+        "endLine": 106,
         "endColumn": 45
     },
     {
         "name": "a.<computed: b>.literal.c.<computed>.42.43.literal1.literal2.f1",
-        "startLine": 104,
+        "startLine": 106,
         "startColumn": 46,
-        "endLine": 105,
+        "endLine": 107,
         "endColumn": 30
     }
 ]

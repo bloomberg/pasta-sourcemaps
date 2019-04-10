@@ -17,6 +17,7 @@
 import { FunctionDesc } from "../src/functionDesc";
 import { FileType } from "./types";
 
+import * as assert from "assert";
 import * as ts from "typescript";
 
 /**
@@ -183,21 +184,20 @@ function getFunctionName(func: ts.FunctionLikeDeclaration): string {
             }
         }
     }
-    return appendNecessaryPrefix(nameText, func);
+    const prefix = getPrefix(func);
+    if (prefix) {
+        return nameText === "" ? prefix : `${prefix}.${nameText}`;
+    }
+    return nameText;
 }
 
-function appendNecessaryPrefix(
-    funcName: string,
-    func: ts.FunctionLikeDeclaration
-) {
-    let nameText = funcName;
+function getPrefix(func: ts.FunctionLikeDeclaration): string | null {
     let propValue: ts.FunctionLikeDeclaration | ts.ClassLikeDeclaration = func;
-
-    // prepend class prefix if function is inside a class
+    let prefix = null;
+    // get class prefix if function is inside a class
     const classPrefix = getClassPrefix(func);
     if (classPrefix) {
-        nameText =
-            nameText === "" ? classPrefix : `${classPrefix}.${nameText}`;
+        prefix = classPrefix;
         const classPropValue = getParentClassProperty(func);
         if (classPropValue) {
             // if the class is a property of an object literal, we want to
@@ -205,31 +205,44 @@ function appendNecessaryPrefix(
             propValue = classPropValue;
         } else {
             // this means the class is not inside an object literal and we are done
-            return nameText;
+            return prefix;
         }
     }
 
-    // prepend object literal prefix if function (or enclosing class)
+    // get object literal prefix if function (or enclosing class)
     // is inside an object literal
     const objectLiteralPrefix = getObjectLiteralPrefix(propValue);
     if (objectLiteralPrefix) {
-        nameText = `${objectLiteralPrefix}.${nameText}`;
+        prefix = prefix
+            ? `${objectLiteralPrefix}.${prefix}`
+            : objectLiteralPrefix;
     }
-    return nameText;
+    return prefix;
 }
 
-function getMemberNodeForFunction(
+function isProperty(
     func: ts.FunctionLikeDeclaration | ts.ClassLikeDeclaration
 ) {
-    let isProperty = false;
-    let member;
+    return (
+        (ts.isFunctionExpression(func) ||
+            ts.isArrowFunction(func) ||
+            ts.isClassExpression(func)) &&
+        (ts.isPropertyDeclaration(func.parent) ||
+            ts.isPropertyAssignment(func.parent))
+    );
+}
+
+function getPropertyNodeForFunction(
+    func: ts.FunctionLikeDeclaration | ts.ClassLikeDeclaration
+) {
+    let propertyNode;
     if (
         ts.isMethodDeclaration(func) ||
         ts.isGetAccessor(func) ||
         ts.isSetAccessor(func) ||
         ts.isConstructorDeclaration(func)
     ) {
-        member = func;
+        propertyNode = func;
     } else if (
         ts.isFunctionExpression(func) ||
         ts.isArrowFunction(func) ||
@@ -239,31 +252,34 @@ function getMemberNodeForFunction(
             ts.isPropertyDeclaration(func.parent) ||
             ts.isPropertyAssignment(func.parent)
         ) {
-            member = func.parent;
-            isProperty = true;
+            propertyNode = func.parent;
         }
     }
-    return { member, isProperty };
+    return propertyNode;
 }
 
 function getObjectLiteralPrefix(
     func: ts.FunctionLikeDeclaration | ts.ClassLikeDeclaration
 ): string | null {
-    let { member, isProperty } = getMemberNodeForFunction(func);
-    // member === null means the function was neither a method nor a
-    // property, so it is not part of an object literal
-    if (!member) {
+    const isProp = isProperty(func);
+    const propertyNode = getPropertyNodeForFunction(func);
+    // propertyNode === null means the function was neither a method nor a
+    // property, so it is not part of an object literal or class declaration
+    if (!propertyNode) {
         return null;
     }
     // if the function is a property, and either has a local name,
     // or is inside a class expression, we take the local name and
     // and do not prefix it with the object literal chain
-    if (isProperty) {
-        if (func.name !== undefined || ts.isClassExpression(member.parent)) {
+    if (isProp) {
+        if (
+            func.name !== undefined ||
+            ts.isClassExpression(propertyNode.parent)
+        ) {
             return null;
         }
     }
-    return getObjectLiteralPrefixR(member.parent);
+    return getObjectLiteralPrefixR(propertyNode.parent);
 }
 
 function getObjectLiteralPrefixR(
@@ -302,9 +318,9 @@ function getObjectLiteralPrefixR(
 }
 
 function getParentClassProperty(func: ts.FunctionLikeDeclaration) {
-    let { member } = getMemberNodeForFunction(func);
-    if (member) {
-        const parent = member.parent;
+    const propertyNode = getPropertyNodeForFunction(func);
+    if (propertyNode) {
+        const parent = propertyNode.parent;
         if (ts.isClassDeclaration(parent) || ts.isClassExpression(parent)) {
             return parent;
         }
@@ -313,20 +329,22 @@ function getParentClassProperty(func: ts.FunctionLikeDeclaration) {
 }
 
 function getClassPrefix(func: ts.FunctionLikeDeclaration): string | null {
-    let { member, isProperty } = getMemberNodeForFunction(func);
-    if (member) {
-        const parent = member.parent;
-        if (ts.isClassDeclaration(parent) || ts.isClassExpression(parent)) {
-            const className = getClassName(parent);
-            if (isStatic(member)) {
-                if (!isProperty || func.name === undefined) {
-                    return className;
-                }
-            } else if (ts.isConstructorDeclaration(func)) {
+    const isProp = isProperty(func);
+    const propertyNode = getPropertyNodeForFunction(func);
+    if (!propertyNode) {
+        return null;
+    }
+    const parent = propertyNode.parent;
+    if (ts.isClassDeclaration(parent) || ts.isClassExpression(parent)) {
+        const className = getClassName(parent);
+        if (isStatic(propertyNode)) {
+            if (!isProp || func.name === undefined) {
                 return className;
-            } else if (!isProperty) {
-                return `${className}.prototype`;
             }
+        } else if (ts.isConstructorDeclaration(func)) {
+            return className;
+        } else if (!isProp) {
+            return `${className}.prototype`;
         }
     }
     return null;
@@ -339,7 +357,6 @@ function getClassName(classNode: ts.ClassLikeDeclaration): string {
         return classNode.name.text;
     }
     // try to get the name from the left hand side
-    let nameText = null;
     if (ts.isClassExpression(classNode)) {
         const parent = classNode.parent;
         if (
@@ -348,7 +365,7 @@ function getClassName(classNode: ts.ClassLikeDeclaration): string {
             ts.isPropertyDeclaration(parent)
         ) {
             if (ts.isPropertyName(parent.name)) {
-                nameText = getPropertyName(parent.name);
+                return getPropertyName(parent.name);
             }
         } else if (
             ts.isBinaryExpression(parent) &&
@@ -358,17 +375,17 @@ function getClassName(classNode: ts.ClassLikeDeclaration): string {
                 ts.isPropertyAccessExpression(parent.left) ||
                 ts.isElementAccessExpression(parent.left)
             ) {
-                nameText = getLeftHandSideName(parent.left);
+                return getLeftHandSideName(parent.left);
             }
         }
     }
-    return nameText ? nameText : "<anonymous>";
+    return "<anonymous>";
 }
 
 function isStatic(func: ts.Node): boolean {
     if (func.modifiers) {
-        return func.modifiers.some((mod: ts.Modifier) => {
-            return mod.kind === ts.SyntaxKind.StaticKeyword;
+        return func.modifiers.some(({ kind }) => {
+            return kind === ts.SyntaxKind.StaticKeyword;
         });
     }
     return false;
@@ -393,17 +410,20 @@ function getLeftHandSideName(left: ts.Expression): string {
     return "<computed>";
 }
 
-function getPropertyName(name: ts.PropertyName): string | null {
+function getPropertyName(name: ts.PropertyName): string {
     if (
         ts.isIdentifier(name) ||
         ts.isStringLiteral(name) ||
         ts.isNumericLiteral(name)
     ) {
         return name.text;
-    } else if (ts.isComputedPropertyName(name)) {
+    }
+    if (ts.isComputedPropertyName(name)) {
         return computedName(name.expression);
     }
-    return null;
+    // all cases are covered above, should never reach here
+    assert(false);
+    return "";
 }
 
 function getNameText(
@@ -414,9 +434,10 @@ function getNameText(
     if (ts.isPropertyName(name)) {
         nameText = getPropertyName(name);
         if (ts.isGetAccessor(func)) {
-            nameText = `get ${nameText}`;
-        } else if (ts.isSetAccessor(func)) {
-            nameText = `set ${nameText}`;
+            return `get ${nameText}`;
+        }
+        if (ts.isSetAccessor(func)) {
+            return `set ${nameText}`;
         }
     }
     return nameText;

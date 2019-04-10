@@ -1,25 +1,37 @@
 class A {
-    constructor() {}        // A
-    f() {}                  // A.prototype.f
-    static g(){}            // A.g
-    h = function(){}        // h
-    static i = function(){} // A.i
+    constructor() {}            // A
+    f() {}                      // A.prototype.f
+    static g(){}                // A.g
+    h = function(){}            // h
+    static i = function(){}     // A.i
+    get j() {return 1;}         // A.prototype.get j
+    set j(p){}                  // A.prototype.set j
+    static get K(){return 1;}   // A.get K
+    static set K(p){}           // A.set K
 }
 
 const B = class {
-    constructor(){}         // B
-    f(){}                   // B.prototype.f
-    static g(){}            // B.g
-    h = function(){}        // h
-    static i = function(){} // B.i
+    constructor(){}             // B
+    f(){}                       // B.prototype.f
+    static g(){}                // B.g
+    h = function(){}            // h
+    static i = function(){}     // B.i
+    get j() {return 1;}         // B.prototype.get j
+    set j(p){}                  // B.prototype.set j
+    static get K(){return 1;}   // B.get K
+    static set K(p){}           // B.set K
 }
 
 const C = class LocalName {
-    constructor(){}         // LocalName
-    f(){}                   // LocalName.prototype.f
-    static g(){}            // LocalName.g
-    h = function(){}        // h
-    static i = function(){} // LocalName.i
+    constructor(){}             // LocalName
+    f(){}                       // LocalName.prototype.f
+    static g(){}                // LocalName.g
+    h = function(){}            // h
+    static i = function(){}     // LocalName.i
+    get j() {return 1;}         // LocalName.prototype.get j
+    set j(p){}                  // LocalName.prototype.set j
+    static get K(){return 1;}   // LocalName.get K
+    static set K(p){}           // LocalName.set K
 }
 
 let a = { 
@@ -29,33 +41,49 @@ let a = {
         static g(){}                // a.B.g
         h = function(){}            // h
         static i = function(){}     // a.B.i
+        get j() {return 1;}         // a.B.prototype.get j
+        set j(p){}                  // a.B.prototype.set j
+        static get K(){return 1;}   // a.B.get K
+        static set K(p){}           // a.B.set K
     }
 }
 
 let x = { 
     y: class LocalName {
-        constructor(){}         // LocalName
-        f(){}                   // LocalName.prototype.f
-        static g(){}            // LocalName.g
-        h = function(){}        // h
-        static i = function(){} // LocalName.i
+        constructor(){}             // LocalName
+        f(){}                       // LocalName.prototype.f
+        static g(){}                // LocalName.g
+        h = function(){}            // h
+        static i = function(){}     // LocalName.i
+        get j() {return 1;}         // LocalName.prototype.get j
+        set j(p){}                  // LocalName.prototype.set j
+        static get K(){return 1;}   // LocalName.get K
+        static set K(p){}           // LocalName.set K
     }
 }
 
 a.B = class {
-    constructor(){}         // a.B
-    f(){}                   // a.B.prototype.f
-    static g(){}            // a.B.g
-    h = function(){}        // h
-    static i = function(){} // a.B.i
+    constructor(){}             // a.B
+    f(){}                       // a.B.prototype.f
+    static g(){}                // a.B.g
+    h = function(){}            // h
+    static i = function(){}     // a.B.i
+    get j() {return 1;}         // a.B.prototype.get j
+    set j(p){}                  // a.B.prototype.set j
+    static get K(){return 1;}   // a.B.get K
+    static set K(p){}           // a.B.set K
 }
 
 x.y = class LocalName {
-    constructor(){}         // LocalName
-    f(){}                   // LocalName.prototype.f
-    static g(){}            // LocalName.g
-    h = function(){}        // h
-    static i = function(){} // LocalName.i
+    constructor(){}             // LocalName
+    f(){}                       // LocalName.prototype.f
+    static g(){}                // LocalName.g
+    h = function(){}            // h
+    static i = function(){}     // LocalName.i
+    get j() {return 1;}         // LocalName.prototype.get j
+    set j(p){}                  // LocalName.prototype.set j
+    static get K(){return 1;}   // LocalName.get K
+    static set K(p){}           // LocalName.set K
 }
 
 let m = {
