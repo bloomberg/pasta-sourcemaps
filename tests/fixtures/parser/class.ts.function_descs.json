@@ -3,161 +3,252 @@
         "name": "<top-level>",
         "startLine": 0,
         "startColumn": 0,
-        "endLine": 99,
+        "endLine": 150,
         "endColumn": 1
     },
     {
         "name": "D",
-        "startLine": 3,
+        "startLine": 5,
         "startColumn": 1,
-        "endLine": 7,
+        "endLine": 9,
         "endColumn": 5
     },
     {
-        "name": "f1",
-        "startLine": 7,
+        "name": "D.prototype.f1",
+        "startLine": 9,
         "startColumn": 5,
-        "endLine": 11,
+        "endLine": 13,
         "endColumn": 5
     },
     {
         "name": "f2",
-        "startLine": 13,
+        "startLine": 15,
         "startColumn": 16,
-        "endLine": 16,
+        "endLine": 18,
         "endColumn": 5
     },
     {
         "name": "localName",
-        "startLine": 18,
+        "startLine": 20,
         "startColumn": 18,
-        "endLine": 21,
+        "endLine": 22,
         "endColumn": 5
     },
     {
-        "name": "f4",
-        "startLine": 21,
+        "name": "D.f4",
+        "startLine": 22,
         "startColumn": 6,
-        "endLine": 25,
+        "endLine": 26,
         "endColumn": 5
     },
     {
-        "name": "get z",
-        "startLine": 25,
-        "startColumn": 5,
+        "name": "D.f5",
+        "startLine": 28,
+        "startColumn": 23,
         "endLine": 30,
         "endColumn": 5
     },
     {
-        "name": "set z",
-        "startLine": 30,
-        "startColumn": 5,
-        "endLine": 33,
+        "name": "localName",
+        "startLine": 32,
+        "startColumn": 22,
+        "endLine": 34,
         "endColumn": 5
     },
     {
-        "name": "get Z",
-        "startLine": 33,
+        "name": "D.prototype.get z",
+        "startLine": 34,
         "startColumn": 5,
-        "endLine": 38,
+        "endLine": 39,
         "endColumn": 5
     },
     {
-        "name": "f5",
-        "startLine": 38,
+        "name": "D.prototype.set z",
+        "startLine": 39,
         "startColumn": 5,
         "endLine": 42,
         "endColumn": 5
     },
     {
-        "name": "f6",
+        "name": "D.get Z",
         "startLine": 42,
         "startColumn": 5,
-        "endLine": 46,
+        "endLine": 47,
         "endColumn": 5
     },
     {
-        "name": "f7",
-        "startLine": 46,
+        "name": "D.prototype.f7",
+        "startLine": 47,
         "startColumn": 5,
-        "endLine": 50,
+        "endLine": 51,
         "endColumn": 5
     },
     {
-        "name": "f8",
-        "startLine": 50,
+        "name": "D.f8",
+        "startLine": 51,
         "startColumn": 5,
-        "endLine": 54,
+        "endLine": 55,
         "endColumn": 5
     },
     {
-        "name": "f9",
-        "startLine": 56,
-        "startColumn": 18,
-        "endLine": 58,
-        "endColumn": 5
-    },
-    {
-        "name": "<computed: prop1>",
-        "startLine": 58,
-        "startColumn": 6,
-        "endLine": 62,
-        "endColumn": 5
-    },
-    {
-        "name": "stringLiteral1",
-        "startLine": 62,
+        "name": "D.prototype.f9",
+        "startLine": 55,
         "startColumn": 5,
-        "endLine": 66,
+        "endLine": 59,
         "endColumn": 5
     },
     {
-        "name": "stringLiteral2",
-        "startLine": 68,
-        "startColumn": 22,
+        "name": "D.f10",
+        "startLine": 59,
+        "startColumn": 5,
+        "endLine": 63,
+        "endColumn": 5
+    },
+    {
+        "name": "f11",
+        "startLine": 65,
+        "startColumn": 19,
+        "endLine": 67,
+        "endColumn": 5
+    },
+    {
+        "name": "D.f12",
+        "startLine": 69,
+        "startColumn": 16,
         "endLine": 71,
         "endColumn": 5
     },
     {
-        "name": "abc",
+        "name": "D.prototype.<computed: prop1>",
         "startLine": 71,
         "startColumn": 6,
         "endLine": 75,
         "endColumn": 5
     },
     {
-        "name": "42",
-        "startLine": 77,
-        "startColumn": 8,
-        "endLine": 80,
-        "endColumn": 5
-    },
-    {
-        "name": "43",
-        "startLine": 80,
-        "startColumn": 6,
-        "endLine": 84,
-        "endColumn": 5
-    },
-    {
-        "name": "44",
-        "startLine": 84,
+        "name": "D.<computed: prop2>",
+        "startLine": 75,
         "startColumn": 5,
+        "endLine": 79,
+        "endColumn": 5
+    },
+    {
+        "name": "D.prototype.stringLiteral1",
+        "startLine": 79,
+        "startColumn": 5,
+        "endLine": 83,
+        "endColumn": 5
+    },
+    {
+        "name": "stringLiteral2",
+        "startLine": 85,
+        "startColumn": 22,
         "endLine": 88,
         "endColumn": 5
     },
     {
-        "name": "<computed>",
+        "name": "D.stringLiteral3",
         "startLine": 88,
-        "startColumn": 5,
+        "startColumn": 6,
         "endLine": 92,
         "endColumn": 5
     },
     {
-        "name": "<computed: sym1>",
-        "startLine": 92,
-        "startColumn": 5,
+        "name": "D.stringLiteral4",
+        "startLine": 94,
+        "startColumn": 29,
         "endLine": 96,
+        "endColumn": 5
+    },
+    {
+        "name": "D.prototype.abc",
+        "startLine": 96,
+        "startColumn": 6,
+        "endLine": 100,
+        "endColumn": 5
+    },
+    {
+        "name": "D.def",
+        "startLine": 100,
+        "startColumn": 5,
+        "endLine": 104,
+        "endColumn": 5
+    },
+    {
+        "name": "D.xyz",
+        "startLine": 106,
+        "startColumn": 20,
+        "endLine": 108,
+        "endColumn": 5
+    },
+    {
+        "name": "42",
+        "startLine": 110,
+        "startColumn": 8,
+        "endLine": 113,
+        "endColumn": 5
+    },
+    {
+        "name": "D.prototype.43",
+        "startLine": 113,
+        "startColumn": 6,
+        "endLine": 117,
+        "endColumn": 5
+    },
+    {
+        "name": "D.prototype.44",
+        "startLine": 117,
+        "startColumn": 5,
+        "endLine": 121,
+        "endColumn": 5
+    },
+    {
+        "name": "D.45",
+        "startLine": 121,
+        "startColumn": 5,
+        "endLine": 125,
+        "endColumn": 5
+    },
+    {
+        "name": "D.46",
+        "startLine": 125,
+        "startColumn": 5,
+        "endLine": 129,
+        "endColumn": 5
+    },
+    {
+        "name": "D.47",
+        "startLine": 131,
+        "startColumn": 15,
+        "endLine": 133,
+        "endColumn": 5
+    },
+    {
+        "name": "D.48",
+        "startLine": 135,
+        "startColumn": 17,
+        "endLine": 137,
+        "endColumn": 5
+    },
+    {
+        "name": "D.prototype.<computed>",
+        "startLine": 137,
+        "startColumn": 6,
+        "endLine": 141,
+        "endColumn": 5
+    },
+    {
+        "name": "D.<computed>",
+        "startLine": 141,
+        "startColumn": 5,
+        "endLine": 145,
+        "endColumn": 5
+    },
+    {
+        "name": "D.prototype.<computed: sym1>",
+        "startLine": 145,
+        "startColumn": 5,
+        "endLine": 149,
         "endColumn": 5
     }
 ]

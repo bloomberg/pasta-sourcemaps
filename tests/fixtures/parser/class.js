@@ -1,5 +1,6 @@
-let prop1 = "prop value";
-let prop2 = "prop value";
+let prop1 = "prop value 1";
+let prop2 = "prop value 2 ";
+let prop3 = "prop value 3";
 let sym = new Symbol();
 class A
 {
@@ -51,6 +52,10 @@ class A
         //..
     }
 
+    static [prop3]() {
+        //..
+    }
+
     "stringLiteral" () {
         //..
     }
@@ -59,7 +64,7 @@ class A
         //..
     }
 
-    43() {
+    static "stringLiteral2" () {
         //..
     }
 
@@ -71,6 +76,18 @@ class A
         //..
     }
 
+    static ["def"]() {
+        //..
+    }
+
+    43() {
+        //..
+    }
+
+    static 42() {
+        //..
+    }
+
     [44]() {
         //..
     }
@@ -79,7 +96,15 @@ class A
         //..
     }
 
+    static [46]() {
+        //..
+    }
+
     ["a"+"b"]() {
+        //..
+    }
+
+    static ["d"+"e"]() {
         //..
     }
 
