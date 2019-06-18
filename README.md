@@ -44,21 +44,6 @@ function names_. This hinders debugging and confuses automatic crash stack conso
 npm install @bloomberg/pasta-sourcemaps
 ```
 
-## Development
-
-- Clone this repository
-- Install dependencies:
-  - `npm install`
-- Write code, add tests!
-- To build code and run tests:
-  - `npm run build`
-  - `npm run test`
-- To run lint checks prior to committing:
-  - `npm run lint`
-
-Refer to the [Contributions](#contributions) section for information on
-creating an Issue and submitting Pull Requests.
-
 ## API
 
 `@bloomberg/pasta-sourcemaps` exposes three utilities:
@@ -191,6 +176,21 @@ const decoder = new pasta.SourceMapDecoder(enrichedSourceMap);
 decoder.decode("barilla.js", 0, 4);  // orzo
 decoder.decode("barilla.js", 0, 25); // penne
 ```
+
+## Development
+
+- Clone this repository
+- Install dependencies:
+  - `npm install`
+- Write code, add tests!
+- To build code and run tests:
+  - `npm run build`
+  - `npm run test`
+- To run lint checks prior to committing:
+  - `npm run lint`
+
+Refer to the [Contributions](#contributions) section for information on
+creating an Issue and submitting Pull Requests.
 
 ## Contributions
 
