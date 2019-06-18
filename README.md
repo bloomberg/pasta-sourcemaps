@@ -5,7 +5,7 @@
 [![npm Badge](https://img.shields.io/npm/v/@bloomberg/pasta-sourcemaps.svg)](https://www.npmjs.com/package/@bloomberg/pasta-sourcemaps)
 [![Build Status](https://travis-ci.com/bloomberg/pasta-sourcemaps.svg?branch=master)](https://travis-ci.com/bloomberg/pasta-sourcemaps)
 
-`pasta`, or Pretty (and) Accurate Stack Trace Analysis, is an implementation of an extension to the source map format that allows for accurate function name decoding. It allows you to extract function-related metadata from a source file and encode it into a source map, as well as decode a pasta-enriched source map to query enclosing function names for a given location. 
+`pasta`, or Pretty (and) Accurate Stack Trace Analysis, is an implementation of an extension to the source map format that allows for accurate function name decoding. It allows you to extract function-related metadata from a source file and encode it into a source map, as well as decode a pasta-enriched source map to query enclosing function names for a given location.
 
 ## Background
 
@@ -31,7 +31,7 @@ Today, [source maps](https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpi
 already provide the ability to produce accurate _locations_ (filename, line number, column number) in a crash stack, but not _enclosing
 function names_. This hinders debugging and confuses automatic crash stack consolidation.
 
-`pasta` extends the source map format with a `x_com_bloomberg_sourcesFunctionMappings` field to allow for accurate function name decoding. See [spec.md](spec.md) to learn more about the `pasta` format. 
+`pasta` extends the source map format with a `x_com_bloomberg_sourcesFunctionMappings` field to allow for accurate function name decoding. See [spec.md](spec.md) to learn more about the `pasta` format.
 
 ## Features
 
@@ -47,13 +47,14 @@ npm install @bloomberg/pasta-sourcemaps
 ## API
 
 `@bloomberg/pasta-sourcemaps` exposes three utilities:
+
 - [parser](src/parser.ts)
 - [encoder](src/encoder.ts)
 - [decoder](src/decoder.ts)
 
-The parser and the encoder are normally used in conjuction to parse a source file and encode the resulting function descriptions into a source map. 
+The parser and the encoder are normally used in conjunction to parse a source file and encode the resulting function descriptions into a source map.
 
-The decoder takes a pasta-enriched sourcemap and gives back enclosing function names for a given source file, line and column location. 
+The decoder takes a pasta-enriched sourcemap and gives back enclosing function names for a given source file, line and column location.
 
 To read the full API documentation please visit the [GitHub Pages](https://bloomberg.github.io/pasta-sourcemaps/)
 
@@ -79,22 +80,22 @@ output
         startLine: 0,
         startColumn: 0,
         endLine: 0,
-        endColumn: 38 
+        endColumn: 38
     },
     {
         name: 'orzo',
         startLine: 0,
         startColumn: 0,
         endLine: 0,
-        endColumn: 17 
+        endColumn: 17
     },
     {
         name: 'penne',
         startLine: 0,
         startColumn: 18,
         endLine: 0,
-        endColumn: 37 
-    } 
+        endColumn: 37
+    }
 ]
 ```
 
@@ -119,22 +120,22 @@ const functionDescs = new Map([
             startLine: 0,
             startColumn: 0,
             endLine: 0,
-            endColumn: 38 
+            endColumn: 38
         },
         {
             name: 'orzo',
             startLine: 0,
             startColumn: 0,
             endLine: 0,
-            endColumn: 17 
+            endColumn: 17
         },
         {
             name: 'penne',
             startLine: 0,
             startColumn: 18,
             endLine: 0,
-            endColumn: 37 
-        } 
+            endColumn: 37
+        }
         ]
     ]
 ]);
@@ -153,7 +154,7 @@ output
     sources: [ 'barilla.js' ],
     names: [ 'orzo', 'penne', '<top-level>' ],
     mappings: 'AAAA,SAASA,QAAU,SAASC',
-    x_com_bloomberg_sourcesFunctionMappings: [ 'EAAAsC,FAAArB,CAkBAoB' ] 
+    x_com_bloomberg_sourcesFunctionMappings: [ 'EAAAsC,FAAArB,CAkBAoB' ]
 }
 ```
 
@@ -168,7 +169,7 @@ const enrichedSourceMap = {
     sources: [ 'barilla.js' ],
     names: [ 'orzo', 'penne', '<top-level>' ],
     mappings: 'AAAA,SAASA,QAAU,SAASC',
-    x_com_bloomberg_sourcesFunctionMappings: [ 'EAAAsC,FAAArB,CAkBAoB' ] 
+    x_com_bloomberg_sourcesFunctionMappings: [ 'EAAAsC,FAAArB,CAkBAoB' ]
 };
 
 const decoder = new pasta.SourceMapDecoder(enrichedSourceMap);
