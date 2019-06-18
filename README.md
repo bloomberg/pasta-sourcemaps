@@ -190,9 +190,6 @@ decoder.decode("barilla.js", 0, 25); // penne
 - To run lint checks prior to committing:
   - `npm run lint`
 
-Refer to the [Contributions](#contributions) section for information on
-creating an Issue and submitting Pull Requests.
-
 ## Contributions
 
 We :heart: contributions.
