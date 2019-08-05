@@ -33,7 +33,7 @@
     "tape": "^4.9.2",
     "ts-node": "^7.0.1",
     "typedoc": "^0.15.0",
-    "typedoc-plugin-sourcefile-url": "^1.0.3"
+    "typedoc-plugin-sourcefile-url": "^1.0.4"
   },
   "dependencies": {
     "typescript": "^3.2.2",
