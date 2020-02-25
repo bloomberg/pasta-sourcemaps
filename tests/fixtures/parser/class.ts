@@ -148,4 +148,36 @@ class D
     [sym1]() {
         //..
     }
+
+    f13 = function() {
+        //..
+    };
+
+    f14 = function localName() {
+        //..
+    };
+
+    f15 = async function*() {
+        //..
+    };
+
+    f16 = () => {
+        //..
+    };
+
+    #f17 = function() {
+        //..
+    };
+
+    #f18 = function localName() {
+        //..
+    };
+
+    #f19 = async function*() {
+        //..
+    };
+
+    #f20 = () => {
+        //..
+    };
 }

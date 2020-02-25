@@ -3,8 +3,8 @@
         "name": "<top-level>",
         "startLine": 0,
         "startColumn": 0,
-        "endLine": 150,
-        "endColumn": 1
+        "endLine": 183,
+        "endColumn": 0
     },
     {
         "name": "D",
@@ -249,6 +249,62 @@
         "startLine": 145,
         "startColumn": 5,
         "endLine": 149,
+        "endColumn": 5
+    },
+    {
+        "name": "f13",
+        "startLine": 151,
+        "startColumn": 9,
+        "endLine": 153,
+        "endColumn": 5
+    },
+    {
+        "name": "localName",
+        "startLine": 155,
+        "startColumn": 9,
+        "endLine": 157,
+        "endColumn": 5
+    },
+    {
+        "name": "f15",
+        "startLine": 159,
+        "startColumn": 9,
+        "endLine": 161,
+        "endColumn": 5
+    },
+    {
+        "name": "f16",
+        "startLine": 163,
+        "startColumn": 9,
+        "endLine": 165,
+        "endColumn": 5
+    },
+    {
+        "name": "#f17",
+        "startLine": 167,
+        "startColumn": 10,
+        "endLine": 169,
+        "endColumn": 5
+    },
+    {
+        "name": "localName",
+        "startLine": 171,
+        "startColumn": 10,
+        "endLine": 173,
+        "endColumn": 5
+    },
+    {
+        "name": "#f19",
+        "startLine": 175,
+        "startColumn": 10,
+        "endLine": 177,
+        "endColumn": 5
+    },
+    {
+        "name": "#f20",
+        "startLine": 179,
+        "startColumn": 10,
+        "endLine": 181,
         "endColumn": 5
     }
 ]

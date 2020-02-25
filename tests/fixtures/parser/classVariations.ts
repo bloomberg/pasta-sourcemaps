@@ -8,6 +8,7 @@ class A {
     set j(p){}                  // A.prototype.set j
     static get K(){return 1;}   // A.get K
     static set K(p){}           // A.set K
+    #l = function(){}           // #l
 }
 
 const B = class {
@@ -20,6 +21,7 @@ const B = class {
     set j(p){}                  // B.prototype.set j
     static get K(){return 1;}   // B.get K
     static set K(p){}           // B.set K
+    #l = function(){}           // #l
 }
 
 const C = class LocalName {
@@ -32,6 +34,7 @@ const C = class LocalName {
     set j(p){}                  // LocalName.prototype.set j
     static get K(){return 1;}   // LocalName.get K
     static set K(p){}           // LocalName.set K
+    #l = function(){}           // #l
 }
 
 let a = { 
@@ -45,6 +48,7 @@ let a = {
         set j(p){}                  // a.B.prototype.set j
         static get K(){return 1;}   // a.B.get K
         static set K(p){}           // a.B.set K
+        #l = function(){}           // #l
     }
 }
 
@@ -59,6 +63,7 @@ let x = {
         set j(p){}                  // LocalName.prototype.set j
         static get K(){return 1;}   // LocalName.get K
         static set K(p){}           // LocalName.set K
+        #l = function(){}           // #l
     }
 }
 
@@ -72,6 +77,7 @@ a.B = class {
     set j(p){}                  // a.B.prototype.set j
     static get K(){return 1;}   // a.B.get K
     static set K(p){}           // a.B.set K
+    #l = function(){}           // #l
 }
 
 x.y = class LocalName {
@@ -84,6 +90,7 @@ x.y = class LocalName {
     set j(p){}                  // LocalName.prototype.set j
     static get K(){return 1;}   // LocalName.get K
     static set K(p){}           // LocalName.set K
+    #l = function(){}           // #l
 }
 
 let m = {
@@ -96,7 +103,8 @@ let m = {
             static s(){}                    // m.n.O.s
             static t = function(){}         // m.n.O.t
             get a(){return 5;}              // m.n.O.prototype.get a
-        }, 
+            #u = function(){}               // #u
+    },
         W: class LocalName {
             constructor(){}                 // LocalName
             p = function(){}                // p
@@ -105,6 +113,7 @@ let m = {
             static s(){}                    // LocalName.s
             static t = function(){}         // LocalName.t
             get a(){return 5;}              // LocalName.prototype.get a
+            #u = function(){}               // #u
         }, 
         ["Q"]: class {
             r(){}                           // m.n.Q.prototype.r

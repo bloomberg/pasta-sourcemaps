@@ -17,7 +17,6 @@
 import { FunctionDesc } from "../src/functionDesc";
 import { FileType } from "./types";
 
-import * as assert from "assert";
 import * as ts from "typescript";
 
 /**
@@ -413,19 +412,15 @@ function getLeftHandSideName(left: ts.Expression): string {
 }
 
 function getPropertyName(name: ts.PropertyName): string {
-    if (
-        ts.isIdentifier(name) ||
-        ts.isStringLiteral(name) ||
-        ts.isNumericLiteral(name)
-    ) {
-        return name.text;
+    switch (name.kind) {
+        case ts.SyntaxKind.Identifier:
+        case ts.SyntaxKind.StringLiteral:
+        case ts.SyntaxKind.NumericLiteral:
+        case ts.SyntaxKind.PrivateIdentifier:
+            return name.text;
+        case ts.SyntaxKind.ComputedPropertyName:
+            return computedName(name.expression);
     }
-    if (ts.isComputedPropertyName(name)) {
-        return computedName(name.expression);
-    }
-    // all cases are covered above, should never reach here
-    assert(false);
-    return "";
 }
 
 function getNameText(
@@ -441,6 +436,9 @@ function getNameText(
         if (ts.isSetAccessor(func)) {
             return `set ${nameText}`;
         }
+    }
+    if (ts.isPrivateIdentifier(name)) {
+        nameText = name.text;
     }
     return nameText;
 }

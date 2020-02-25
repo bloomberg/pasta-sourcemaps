@@ -115,4 +115,36 @@ class A
     [(function(){}())]() {
         //..
     }
+
+    f7 = function() {
+        //..
+    };
+
+    f8 = function localName() {
+        //..
+    };
+
+    f9 = async function*() {
+        //..
+    };
+
+    f10 = () => {
+        //..
+    };
+
+    #f11 = function() {
+        //..
+    };
+
+    #f12 = function localName() {
+        //..
+    };
+
+    #f13 = async function*() {
+        //..
+    };
+
+    #f14 = () => {
+        //..
+    };
 }
