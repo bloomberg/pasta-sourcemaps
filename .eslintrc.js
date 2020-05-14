@@ -9,8 +9,6 @@ module.exports = {
     },
     rules: {
         "prettier/prettier": "error",
-        // Remove conflicting @typescript-eslint provided indent rule
-        "@typescript-eslint/indent": "off",
 
         // Bike-sheddable @typescript-eslint rules that differ from
         //   @typescript-eslint/recommended
@@ -23,11 +21,16 @@ module.exports = {
     extends: [
         // Recommended rulesets from both ESLint and @typescript-eslint
         "eslint:recommended",
+        "plugin:@typescript-eslint/eslint-recommended",
         "plugin:@typescript-eslint/recommended",
 
         // Disables ESLint rules that will conflict with eslint-plugin-prettier
         "prettier",
+        "prettier/@typescript-eslint",
     ],
     parser: "@typescript-eslint/parser",
-    plugins: ["@typescript-eslint", "prettier"],
+    plugins: [
+        "@typescript-eslint",
+        "prettier"
+    ],
 };
