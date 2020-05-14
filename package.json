@@ -29,7 +29,7 @@
     "eslint": "^5.12.1",
     "eslint-config-prettier": "^3.6.0",
     "eslint-plugin-prettier": "^3.0.1",
-    "prettier": "^1.15.3",
+    "prettier": "^2.0.5",
     "tape": "^4.9.2",
     "ts-node": "^7.0.1",
     "typedoc": "^0.15.8",
@@ -38,6 +38,10 @@
   "dependencies": {
     "typescript": "^3.8.2",
     "vlq": "^1.0.0"
+  },
+  "prettier": {
+    "tabWidth": 4,
+    "printWidth": 79
   },
   "repository": {
     "type": "git",
