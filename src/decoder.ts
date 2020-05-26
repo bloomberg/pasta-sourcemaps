@@ -82,11 +82,7 @@ function validateSourceMap(sourceMap: EnrichedSourceMap) {
         sourceMap.x_com_bloomberg_sourcesFunctionMappings.length
     ) {
         throw Error(
-            `sources.length !== x_com_bloomberg_sourcesFunctionMappings.length in source map. sources.length = ${
-                sourceMap.sources.length
-            }, x_com_bloomberg_sourcesFunctionMappings.length = ${
-                sourceMap.x_com_bloomberg_sourcesFunctionMappings.length
-            }`
+            `sources.length !== x_com_bloomberg_sourcesFunctionMappings.length in source map. sources.length = ${sourceMap.sources.length}, x_com_bloomberg_sourcesFunctionMappings.length = ${sourceMap.x_com_bloomberg_sourcesFunctionMappings.length}`
         );
     }
 }
@@ -133,9 +129,7 @@ function decode(encodedMapping: string) {
     const decoded = vlq.decode(encodedMapping);
     if (decoded.length !== 5) {
         throw Error(
-            `Bad mapping ${encodedMapping} in source map. Decoded mapping must have 5 elements but has ${
-                decoded.length
-            }`
+            `Bad mapping ${encodedMapping} in source map. Decoded mapping must have 5 elements but has ${decoded.length}`
         );
     }
     const tuple = decoded as [number, number, number, number, number];
@@ -164,9 +158,7 @@ export function convertToAbsolute(
         const absoluteNameIndex = relNameIndex + prevNameIndex;
         if (absoluteNameIndex < 0 || absoluteNameIndex >= names.length) {
             throw Error(
-                `Name index is out of range. nameIndex = ${absoluteNameIndex}, names.length=${
-                    names.length
-                }`
+                `Name index is out of range. nameIndex = ${absoluteNameIndex}, names.length=${names.length}`
             );
         }
         const name = names[absoluteNameIndex];
