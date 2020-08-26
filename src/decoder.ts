@@ -49,7 +49,11 @@ export class SourceMapDecoder {
      *
      * @throws if `source` is not present in the source map
      */
-    public decode(source: string, line: number, column: number) {
+    public decode(
+        source: string,
+        line: number,
+        column: number
+    ): string | null {
         const descs = this[_functionDescs].get(source);
         // `null` entries in the source map become empty arrays in `[_functionDescs]`
         // so `descs === undefined` means `source` is not present in the source map

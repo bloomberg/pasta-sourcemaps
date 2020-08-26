@@ -17,11 +17,12 @@
 const { readFileSync }: typeof import("fs") = require("fs");
 const { join }: typeof import("path") = require("path");
 
-export function JSONFromFile(file: string, folder: string) {
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export function JSONFromFile(file: string, folder: string): any {
     return JSON.parse(readFile(file, folder));
 }
 
-export function readFile(file: string, folder: string) {
+export function readFile(file: string, folder: string): string {
     const PATH_TO_FIXTURES = join(__dirname, "fixtures", folder);
     return readFileSync(join(PATH_TO_FIXTURES, file), "utf8");
 }

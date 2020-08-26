@@ -37,7 +37,6 @@ test("encoder module test: empty function descs", (t) => {
     const functionsDescs = new Map<string, FunctionDesc[]>();
     const expected = {
         ...sourceMap,
-        // eslint-disable-next-line @typescript-eslint/camelcase
         x_com_bloomberg_sourcesFunctionMappings: [null, null, null],
     };
     const actual = encode(sourceMap, functionsDescs);
@@ -51,7 +50,6 @@ test("encoder module test: empty sources", (t) => {
     let functionsDescs = new Map<string, FunctionDesc[]>();
     const expected = {
         ...sourceMap,
-        // eslint-disable-next-line @typescript-eslint/camelcase
         x_com_bloomberg_sourcesFunctionMappings: [],
     };
     let actual = encode(sourceMap, functionsDescs);
