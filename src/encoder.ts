@@ -63,7 +63,6 @@ export function encode(
     const enriched = {
         ...sourceMap,
         names: names,
-        // eslint-disable-next-line @typescript-eslint/camelcase
         x_com_bloomberg_sourcesFunctionMappings: sourcesFunctionMappings,
     };
     validateEnrichedSourceMap(enriched);

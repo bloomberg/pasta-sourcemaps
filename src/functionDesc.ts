@@ -72,7 +72,7 @@ export function isPartialOverlap(a: FunctionDesc, b: FunctionDesc): boolean {
 /**
  * @ignore Not exported outside of package
  */
-export function compareFunction(a: FunctionDesc, b: FunctionDesc) {
+export function compareFunction(a: FunctionDesc, b: FunctionDesc): -1 | 0 | 1 {
     if (a.startLine < b.startLine) {
         return -1;
     } else if (a.startLine > b.startLine) {
