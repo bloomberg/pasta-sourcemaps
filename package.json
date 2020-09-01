@@ -1,6 +1,6 @@
 {
   "name": "@bloomberg/pasta-sourcemaps",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "Pretty (and) Accurate Stack Trace Analysis",
   "main": "./dist/src/main.js",
   "types": "./dist/src/main.d.ts",
