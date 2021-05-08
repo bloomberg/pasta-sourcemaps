@@ -3,7 +3,7 @@
         "name": "<top-level>",
         "startLine": 0,
         "startColumn": 0,
-        "endLine": 127,
+        "endLine": 186,
         "endColumn": 0
     },
     {
@@ -21,605 +21,1018 @@
         "endColumn": 10
     },
     {
-        "name": "A.g",
+        "name": "A.prototype.#f",
         "startLine": 2,
         "startColumn": 10,
         "endLine": 3,
+        "endColumn": 11
+    },
+    {
+        "name": "A.g",
+        "startLine": 3,
+        "startColumn": 11,
+        "endLine": 4,
         "endColumn": 16
     },
     {
-        "name": "h",
+        "name": "A.#g",
         "startLine": 4,
+        "startColumn": 16,
+        "endLine": 5,
+        "endColumn": 17
+    },
+    {
+        "name": "h",
+        "startLine": 6,
         "startColumn": 7,
-        "endLine": 4,
+        "endLine": 6,
         "endColumn": 20
     },
     {
+        "name": "#h",
+        "startLine": 7,
+        "startColumn": 8,
+        "endLine": 7,
+        "endColumn": 21
+    },
+    {
         "name": "A.i",
-        "startLine": 5,
+        "startLine": 8,
         "startColumn": 14,
-        "endLine": 5,
+        "endLine": 8,
         "endColumn": 27
     },
     {
+        "name": "A.#i",
+        "startLine": 9,
+        "startColumn": 15,
+        "endLine": 9,
+        "endColumn": 28
+    },
+    {
         "name": "A.prototype.get j",
-        "startLine": 5,
-        "startColumn": 27,
-        "endLine": 6,
+        "startLine": 9,
+        "startColumn": 28,
+        "endLine": 10,
         "endColumn": 23
     },
     {
-        "name": "A.prototype.set j",
-        "startLine": 6,
+        "name": "A.prototype.get #j",
+        "startLine": 10,
         "startColumn": 23,
-        "endLine": 7,
+        "endLine": 11,
+        "endColumn": 24
+    },
+    {
+        "name": "A.prototype.set j",
+        "startLine": 11,
+        "startColumn": 24,
+        "endLine": 12,
         "endColumn": 14
     },
     {
-        "name": "A.get K",
-        "startLine": 7,
+        "name": "A.prototype.set #j",
+        "startLine": 12,
         "startColumn": 14,
-        "endLine": 8,
+        "endLine": 13,
+        "endColumn": 15
+    },
+    {
+        "name": "A.get K",
+        "startLine": 13,
+        "startColumn": 15,
+        "endLine": 14,
         "endColumn": 29
     },
     {
-        "name": "A.set K",
-        "startLine": 8,
+        "name": "A.get #K",
+        "startLine": 14,
         "startColumn": 29,
-        "endLine": 9,
+        "endLine": 15,
+        "endColumn": 30
+    },
+    {
+        "name": "A.set K",
+        "startLine": 15,
+        "startColumn": 30,
+        "endLine": 16,
         "endColumn": 21
     },
     {
-        "name": "#l",
-        "startLine": 10,
-        "startColumn": 8,
-        "endLine": 10,
-        "endColumn": 21
+        "name": "A.set #K",
+        "startLine": 16,
+        "startColumn": 21,
+        "endLine": 17,
+        "endColumn": 22
     },
     {
         "name": "B",
-        "startLine": 13,
+        "startLine": 20,
         "startColumn": 17,
-        "endLine": 14,
+        "endLine": 21,
         "endColumn": 19
     },
     {
         "name": "B.prototype.f",
-        "startLine": 14,
+        "startLine": 21,
         "startColumn": 19,
-        "endLine": 15,
+        "endLine": 22,
         "endColumn": 9
+    },
+    {
+        "name": "B.prototype.#f",
+        "startLine": 22,
+        "startColumn": 9,
+        "endLine": 23,
+        "endColumn": 10
     },
     {
         "name": "B.g",
-        "startLine": 15,
-        "startColumn": 9,
-        "endLine": 16,
+        "startLine": 23,
+        "startColumn": 10,
+        "endLine": 24,
         "endColumn": 16
     },
     {
+        "name": "B.#g",
+        "startLine": 24,
+        "startColumn": 16,
+        "endLine": 25,
+        "endColumn": 17
+    },
+    {
         "name": "h",
-        "startLine": 17,
+        "startLine": 26,
         "startColumn": 7,
-        "endLine": 17,
+        "endLine": 26,
         "endColumn": 20
+    },
+    {
+        "name": "#h",
+        "startLine": 27,
+        "startColumn": 8,
+        "endLine": 27,
+        "endColumn": 21
     },
     {
         "name": "B.i",
-        "startLine": 18,
+        "startLine": 28,
         "startColumn": 14,
-        "endLine": 18,
+        "endLine": 28,
         "endColumn": 27
+    },
+    {
+        "name": "B.#i",
+        "startLine": 29,
+        "startColumn": 15,
+        "endLine": 29,
+        "endColumn": 28
     },
     {
         "name": "B.prototype.get j",
-        "startLine": 18,
-        "startColumn": 27,
-        "endLine": 19,
+        "startLine": 29,
+        "startColumn": 28,
+        "endLine": 30,
         "endColumn": 23
+    },
+    {
+        "name": "B.prototype.get #j",
+        "startLine": 30,
+        "startColumn": 23,
+        "endLine": 31,
+        "endColumn": 24
     },
     {
         "name": "B.prototype.set j",
-        "startLine": 19,
-        "startColumn": 23,
-        "endLine": 20,
+        "startLine": 31,
+        "startColumn": 24,
+        "endLine": 32,
         "endColumn": 14
+    },
+    {
+        "name": "B.prototype.set #j",
+        "startLine": 32,
+        "startColumn": 14,
+        "endLine": 33,
+        "endColumn": 15
     },
     {
         "name": "B.get K",
-        "startLine": 20,
-        "startColumn": 14,
-        "endLine": 21,
-        "endColumn": 29
-    },
-    {
-        "name": "B.set K",
-        "startLine": 21,
-        "startColumn": 29,
-        "endLine": 22,
-        "endColumn": 21
-    },
-    {
-        "name": "#l",
-        "startLine": 23,
-        "startColumn": 8,
-        "endLine": 23,
-        "endColumn": 21
-    },
-    {
-        "name": "LocalName",
-        "startLine": 26,
-        "startColumn": 27,
-        "endLine": 27,
-        "endColumn": 19
-    },
-    {
-        "name": "LocalName.prototype.f",
-        "startLine": 27,
-        "startColumn": 19,
-        "endLine": 28,
-        "endColumn": 9
-    },
-    {
-        "name": "LocalName.g",
-        "startLine": 28,
-        "startColumn": 9,
-        "endLine": 29,
-        "endColumn": 16
-    },
-    {
-        "name": "h",
-        "startLine": 30,
-        "startColumn": 7,
-        "endLine": 30,
-        "endColumn": 20
-    },
-    {
-        "name": "LocalName.i",
-        "startLine": 31,
-        "startColumn": 14,
-        "endLine": 31,
-        "endColumn": 27
-    },
-    {
-        "name": "LocalName.prototype.get j",
-        "startLine": 31,
-        "startColumn": 27,
-        "endLine": 32,
-        "endColumn": 23
-    },
-    {
-        "name": "LocalName.prototype.set j",
-        "startLine": 32,
-        "startColumn": 23,
-        "endLine": 33,
-        "endColumn": 14
-    },
-    {
-        "name": "LocalName.get K",
         "startLine": 33,
-        "startColumn": 14,
+        "startColumn": 15,
         "endLine": 34,
         "endColumn": 29
     },
     {
-        "name": "LocalName.set K",
+        "name": "B.get #K",
         "startLine": 34,
         "startColumn": 29,
         "endLine": 35,
-        "endColumn": 21
+        "endColumn": 30
     },
     {
-        "name": "#l",
-        "startLine": 36,
-        "startColumn": 8,
+        "name": "B.set K",
+        "startLine": 35,
+        "startColumn": 30,
         "endLine": 36,
         "endColumn": 21
     },
     {
-        "name": "a.B",
-        "startLine": 40,
-        "startColumn": 14,
-        "endLine": 41,
-        "endColumn": 23
-    },
-    {
-        "name": "a.B.prototype.f",
-        "startLine": 41,
-        "startColumn": 23,
-        "endLine": 42,
-        "endColumn": 13
-    },
-    {
-        "name": "a.B.g",
-        "startLine": 42,
-        "startColumn": 13,
-        "endLine": 43,
-        "endColumn": 20
-    },
-    {
-        "name": "h",
-        "startLine": 44,
-        "startColumn": 11,
-        "endLine": 44,
-        "endColumn": 24
-    },
-    {
-        "name": "a.B.i",
-        "startLine": 45,
-        "startColumn": 18,
-        "endLine": 45,
-        "endColumn": 31
-    },
-    {
-        "name": "a.B.prototype.get j",
-        "startLine": 45,
-        "startColumn": 31,
-        "endLine": 46,
-        "endColumn": 27
-    },
-    {
-        "name": "a.B.prototype.set j",
-        "startLine": 46,
-        "startColumn": 27,
-        "endLine": 47,
-        "endColumn": 18
-    },
-    {
-        "name": "a.B.get K",
-        "startLine": 47,
-        "startColumn": 18,
-        "endLine": 48,
-        "endColumn": 33
-    },
-    {
-        "name": "a.B.set K",
-        "startLine": 48,
-        "startColumn": 33,
-        "endLine": 49,
-        "endColumn": 25
-    },
-    {
-        "name": "#l",
-        "startLine": 50,
-        "startColumn": 12,
-        "endLine": 50,
-        "endColumn": 25
+        "name": "B.set #K",
+        "startLine": 36,
+        "startColumn": 21,
+        "endLine": 37,
+        "endColumn": 22
     },
     {
         "name": "LocalName",
-        "startLine": 55,
-        "startColumn": 24,
-        "endLine": 56,
-        "endColumn": 23
-    },
-    {
-        "name": "LocalName.prototype.f",
-        "startLine": 56,
-        "startColumn": 23,
-        "endLine": 57,
-        "endColumn": 13
-    },
-    {
-        "name": "LocalName.g",
-        "startLine": 57,
-        "startColumn": 13,
-        "endLine": 58,
-        "endColumn": 20
-    },
-    {
-        "name": "h",
-        "startLine": 59,
-        "startColumn": 11,
-        "endLine": 59,
-        "endColumn": 24
-    },
-    {
-        "name": "LocalName.i",
-        "startLine": 60,
-        "startColumn": 18,
-        "endLine": 60,
-        "endColumn": 31
-    },
-    {
-        "name": "LocalName.prototype.get j",
-        "startLine": 60,
-        "startColumn": 31,
-        "endLine": 61,
-        "endColumn": 27
-    },
-    {
-        "name": "LocalName.prototype.set j",
-        "startLine": 61,
+        "startLine": 40,
         "startColumn": 27,
-        "endLine": 62,
-        "endColumn": 18
-    },
-    {
-        "name": "LocalName.get K",
-        "startLine": 62,
-        "startColumn": 18,
-        "endLine": 63,
-        "endColumn": 33
-    },
-    {
-        "name": "LocalName.set K",
-        "startLine": 63,
-        "startColumn": 33,
-        "endLine": 64,
-        "endColumn": 25
-    },
-    {
-        "name": "#l",
-        "startLine": 65,
-        "startColumn": 12,
-        "endLine": 65,
-        "endColumn": 25
-    },
-    {
-        "name": "a.B",
-        "startLine": 69,
-        "startColumn": 13,
-        "endLine": 70,
+        "endLine": 41,
         "endColumn": 19
     },
     {
+        "name": "LocalName.prototype.f",
+        "startLine": 41,
+        "startColumn": 19,
+        "endLine": 42,
+        "endColumn": 9
+    },
+    {
+        "name": "LocalName.prototype.#f",
+        "startLine": 42,
+        "startColumn": 9,
+        "endLine": 43,
+        "endColumn": 10
+    },
+    {
+        "name": "LocalName.g",
+        "startLine": 43,
+        "startColumn": 10,
+        "endLine": 44,
+        "endColumn": 16
+    },
+    {
+        "name": "LocalName.#g",
+        "startLine": 44,
+        "startColumn": 16,
+        "endLine": 45,
+        "endColumn": 17
+    },
+    {
+        "name": "h",
+        "startLine": 46,
+        "startColumn": 7,
+        "endLine": 46,
+        "endColumn": 20
+    },
+    {
+        "name": "#h",
+        "startLine": 47,
+        "startColumn": 8,
+        "endLine": 47,
+        "endColumn": 21
+    },
+    {
+        "name": "LocalName.i",
+        "startLine": 48,
+        "startColumn": 14,
+        "endLine": 48,
+        "endColumn": 27
+    },
+    {
+        "name": "LocalName.#i",
+        "startLine": 49,
+        "startColumn": 15,
+        "endLine": 49,
+        "endColumn": 28
+    },
+    {
+        "name": "LocalName.prototype.get j",
+        "startLine": 49,
+        "startColumn": 28,
+        "endLine": 50,
+        "endColumn": 23
+    },
+    {
+        "name": "LocalName.prototype.get #j",
+        "startLine": 50,
+        "startColumn": 23,
+        "endLine": 51,
+        "endColumn": 24
+    },
+    {
+        "name": "LocalName.prototype.set j",
+        "startLine": 51,
+        "startColumn": 24,
+        "endLine": 52,
+        "endColumn": 14
+    },
+    {
+        "name": "LocalName.prototype.set #j",
+        "startLine": 52,
+        "startColumn": 14,
+        "endLine": 53,
+        "endColumn": 15
+    },
+    {
+        "name": "LocalName.get K",
+        "startLine": 53,
+        "startColumn": 15,
+        "endLine": 54,
+        "endColumn": 29
+    },
+    {
+        "name": "LocalName.get #K",
+        "startLine": 54,
+        "startColumn": 29,
+        "endLine": 55,
+        "endColumn": 30
+    },
+    {
+        "name": "LocalName.set K",
+        "startLine": 55,
+        "startColumn": 30,
+        "endLine": 56,
+        "endColumn": 21
+    },
+    {
+        "name": "LocalName.set #K",
+        "startLine": 56,
+        "startColumn": 21,
+        "endLine": 57,
+        "endColumn": 22
+    },
+    {
+        "name": "a.B",
+        "startLine": 61,
+        "startColumn": 14,
+        "endLine": 62,
+        "endColumn": 23
+    },
+    {
         "name": "a.B.prototype.f",
+        "startLine": 62,
+        "startColumn": 23,
+        "endLine": 63,
+        "endColumn": 13
+    },
+    {
+        "name": "a.B.prototype.#f",
+        "startLine": 63,
+        "startColumn": 13,
+        "endLine": 64,
+        "endColumn": 14
+    },
+    {
+        "name": "a.B.g",
+        "startLine": 64,
+        "startColumn": 14,
+        "endLine": 65,
+        "endColumn": 20
+    },
+    {
+        "name": "a.B.#g",
+        "startLine": 65,
+        "startColumn": 20,
+        "endLine": 66,
+        "endColumn": 21
+    },
+    {
+        "name": "h",
+        "startLine": 67,
+        "startColumn": 11,
+        "endLine": 67,
+        "endColumn": 24
+    },
+    {
+        "name": "#h",
+        "startLine": 68,
+        "startColumn": 12,
+        "endLine": 68,
+        "endColumn": 25
+    },
+    {
+        "name": "a.B.i",
+        "startLine": 69,
+        "startColumn": 18,
+        "endLine": 69,
+        "endColumn": 31
+    },
+    {
+        "name": "a.B.#i",
         "startLine": 70,
         "startColumn": 19,
-        "endLine": 71,
-        "endColumn": 9
-    },
-    {
-        "name": "a.B.g",
-        "startLine": 71,
-        "startColumn": 9,
-        "endLine": 72,
-        "endColumn": 16
-    },
-    {
-        "name": "h",
-        "startLine": 73,
-        "startColumn": 7,
-        "endLine": 73,
-        "endColumn": 20
-    },
-    {
-        "name": "a.B.i",
-        "startLine": 74,
-        "startColumn": 14,
-        "endLine": 74,
-        "endColumn": 27
+        "endLine": 70,
+        "endColumn": 32
     },
     {
         "name": "a.B.prototype.get j",
-        "startLine": 74,
+        "startLine": 70,
+        "startColumn": 32,
+        "endLine": 71,
+        "endColumn": 27
+    },
+    {
+        "name": "a.B.prototype.get #j",
+        "startLine": 71,
         "startColumn": 27,
-        "endLine": 75,
-        "endColumn": 23
+        "endLine": 72,
+        "endColumn": 28
     },
     {
         "name": "a.B.prototype.set j",
-        "startLine": 75,
-        "startColumn": 23,
-        "endLine": 76,
-        "endColumn": 14
+        "startLine": 72,
+        "startColumn": 28,
+        "endLine": 73,
+        "endColumn": 18
+    },
+    {
+        "name": "a.B.prototype.set #j",
+        "startLine": 73,
+        "startColumn": 18,
+        "endLine": 74,
+        "endColumn": 19
     },
     {
         "name": "a.B.get K",
-        "startLine": 76,
-        "startColumn": 14,
-        "endLine": 77,
-        "endColumn": 29
+        "startLine": 74,
+        "startColumn": 19,
+        "endLine": 75,
+        "endColumn": 33
+    },
+    {
+        "name": "a.B.get #K",
+        "startLine": 75,
+        "startColumn": 33,
+        "endLine": 76,
+        "endColumn": 34
     },
     {
         "name": "a.B.set K",
-        "startLine": 77,
-        "startColumn": 29,
-        "endLine": 78,
-        "endColumn": 21
+        "startLine": 76,
+        "startColumn": 34,
+        "endLine": 77,
+        "endColumn": 25
     },
     {
-        "name": "#l",
-        "startLine": 79,
-        "startColumn": 8,
-        "endLine": 79,
-        "endColumn": 21
+        "name": "a.B.set #K",
+        "startLine": 77,
+        "startColumn": 25,
+        "endLine": 78,
+        "endColumn": 26
     },
     {
         "name": "LocalName",
-        "startLine": 82,
+        "startLine": 83,
+        "startColumn": 24,
+        "endLine": 84,
+        "endColumn": 23
+    },
+    {
+        "name": "LocalName.prototype.f",
+        "startLine": 84,
         "startColumn": 23,
-        "endLine": 83,
+        "endLine": 85,
+        "endColumn": 13
+    },
+    {
+        "name": "LocalName.prototype.#f",
+        "startLine": 85,
+        "startColumn": 13,
+        "endLine": 86,
+        "endColumn": 14
+    },
+    {
+        "name": "LocalName.g",
+        "startLine": 86,
+        "startColumn": 14,
+        "endLine": 87,
+        "endColumn": 20
+    },
+    {
+        "name": "LocalName.#g",
+        "startLine": 87,
+        "startColumn": 20,
+        "endLine": 88,
+        "endColumn": 21
+    },
+    {
+        "name": "h",
+        "startLine": 89,
+        "startColumn": 11,
+        "endLine": 89,
+        "endColumn": 24
+    },
+    {
+        "name": "#h",
+        "startLine": 90,
+        "startColumn": 12,
+        "endLine": 90,
+        "endColumn": 25
+    },
+    {
+        "name": "LocalName.i",
+        "startLine": 91,
+        "startColumn": 18,
+        "endLine": 91,
+        "endColumn": 31
+    },
+    {
+        "name": "LocalName.#i",
+        "startLine": 92,
+        "startColumn": 19,
+        "endLine": 92,
+        "endColumn": 32
+    },
+    {
+        "name": "LocalName.prototype.get j",
+        "startLine": 92,
+        "startColumn": 32,
+        "endLine": 93,
+        "endColumn": 27
+    },
+    {
+        "name": "LocalName.prototype.get #j",
+        "startLine": 93,
+        "startColumn": 27,
+        "endLine": 94,
+        "endColumn": 28
+    },
+    {
+        "name": "LocalName.prototype.set j",
+        "startLine": 94,
+        "startColumn": 28,
+        "endLine": 95,
+        "endColumn": 18
+    },
+    {
+        "name": "LocalName.prototype.set #j",
+        "startLine": 95,
+        "startColumn": 18,
+        "endLine": 96,
+        "endColumn": 19
+    },
+    {
+        "name": "LocalName.get K",
+        "startLine": 96,
+        "startColumn": 19,
+        "endLine": 97,
+        "endColumn": 33
+    },
+    {
+        "name": "LocalName.get #K",
+        "startLine": 97,
+        "startColumn": 33,
+        "endLine": 98,
+        "endColumn": 34
+    },
+    {
+        "name": "LocalName.set K",
+        "startLine": 98,
+        "startColumn": 34,
+        "endLine": 99,
+        "endColumn": 25
+    },
+    {
+        "name": "LocalName.set #K",
+        "startLine": 99,
+        "startColumn": 25,
+        "endLine": 100,
+        "endColumn": 26
+    },
+    {
+        "name": "a.B",
+        "startLine": 104,
+        "startColumn": 13,
+        "endLine": 105,
+        "endColumn": 19
+    },
+    {
+        "name": "a.B.prototype.f",
+        "startLine": 105,
+        "startColumn": 19,
+        "endLine": 106,
+        "endColumn": 9
+    },
+    {
+        "name": "a.B.prototype.#f",
+        "startLine": 106,
+        "startColumn": 9,
+        "endLine": 107,
+        "endColumn": 10
+    },
+    {
+        "name": "a.B.g",
+        "startLine": 107,
+        "startColumn": 10,
+        "endLine": 108,
+        "endColumn": 16
+    },
+    {
+        "name": "a.B.#g",
+        "startLine": 108,
+        "startColumn": 16,
+        "endLine": 109,
+        "endColumn": 17
+    },
+    {
+        "name": "h",
+        "startLine": 110,
+        "startColumn": 7,
+        "endLine": 110,
+        "endColumn": 20
+    },
+    {
+        "name": "#h",
+        "startLine": 111,
+        "startColumn": 8,
+        "endLine": 111,
+        "endColumn": 21
+    },
+    {
+        "name": "a.B.i",
+        "startLine": 112,
+        "startColumn": 14,
+        "endLine": 112,
+        "endColumn": 27
+    },
+    {
+        "name": "a.B.#i",
+        "startLine": 113,
+        "startColumn": 15,
+        "endLine": 113,
+        "endColumn": 28
+    },
+    {
+        "name": "a.B.prototype.get j",
+        "startLine": 113,
+        "startColumn": 28,
+        "endLine": 114,
+        "endColumn": 23
+    },
+    {
+        "name": "a.B.prototype.get #j",
+        "startLine": 114,
+        "startColumn": 23,
+        "endLine": 115,
+        "endColumn": 24
+    },
+    {
+        "name": "a.B.prototype.set j",
+        "startLine": 115,
+        "startColumn": 24,
+        "endLine": 116,
+        "endColumn": 14
+    },
+    {
+        "name": "a.B.prototype.set #j",
+        "startLine": 116,
+        "startColumn": 14,
+        "endLine": 117,
+        "endColumn": 15
+    },
+    {
+        "name": "a.B.get K",
+        "startLine": 117,
+        "startColumn": 15,
+        "endLine": 118,
+        "endColumn": 29
+    },
+    {
+        "name": "a.B.get #K",
+        "startLine": 118,
+        "startColumn": 29,
+        "endLine": 119,
+        "endColumn": 30
+    },
+    {
+        "name": "a.B.set K",
+        "startLine": 119,
+        "startColumn": 30,
+        "endLine": 120,
+        "endColumn": 21
+    },
+    {
+        "name": "a.B.set #K",
+        "startLine": 120,
+        "startColumn": 21,
+        "endLine": 121,
+        "endColumn": 22
+    },
+    {
+        "name": "LocalName",
+        "startLine": 124,
+        "startColumn": 23,
+        "endLine": 125,
         "endColumn": 19
     },
     {
         "name": "LocalName.prototype.f",
-        "startLine": 83,
+        "startLine": 125,
         "startColumn": 19,
-        "endLine": 84,
+        "endLine": 126,
         "endColumn": 9
     },
     {
-        "name": "LocalName.g",
-        "startLine": 84,
+        "name": "LocalName.prototype.#f",
+        "startLine": 126,
         "startColumn": 9,
-        "endLine": 85,
+        "endLine": 127,
+        "endColumn": 10
+    },
+    {
+        "name": "LocalName.g",
+        "startLine": 127,
+        "startColumn": 10,
+        "endLine": 128,
         "endColumn": 16
     },
     {
+        "name": "LocalName.#g",
+        "startLine": 128,
+        "startColumn": 16,
+        "endLine": 129,
+        "endColumn": 17
+    },
+    {
         "name": "h",
-        "startLine": 86,
+        "startLine": 130,
         "startColumn": 7,
-        "endLine": 86,
+        "endLine": 130,
         "endColumn": 20
     },
     {
+        "name": "#h",
+        "startLine": 131,
+        "startColumn": 8,
+        "endLine": 131,
+        "endColumn": 21
+    },
+    {
         "name": "LocalName.i",
-        "startLine": 87,
+        "startLine": 132,
         "startColumn": 14,
-        "endLine": 87,
+        "endLine": 132,
         "endColumn": 27
     },
     {
+        "name": "LocalName.#i",
+        "startLine": 133,
+        "startColumn": 15,
+        "endLine": 133,
+        "endColumn": 28
+    },
+    {
         "name": "LocalName.prototype.get j",
-        "startLine": 87,
-        "startColumn": 27,
-        "endLine": 88,
+        "startLine": 133,
+        "startColumn": 28,
+        "endLine": 134,
         "endColumn": 23
     },
     {
-        "name": "LocalName.prototype.set j",
-        "startLine": 88,
+        "name": "LocalName.prototype.get #j",
+        "startLine": 134,
         "startColumn": 23,
-        "endLine": 89,
+        "endLine": 135,
+        "endColumn": 24
+    },
+    {
+        "name": "LocalName.prototype.set j",
+        "startLine": 135,
+        "startColumn": 24,
+        "endLine": 136,
         "endColumn": 14
     },
     {
-        "name": "LocalName.get K",
-        "startLine": 89,
+        "name": "LocalName.prototype.set #j",
+        "startLine": 136,
         "startColumn": 14,
-        "endLine": 90,
+        "endLine": 137,
+        "endColumn": 15
+    },
+    {
+        "name": "LocalName.get K",
+        "startLine": 137,
+        "startColumn": 15,
+        "endLine": 138,
         "endColumn": 29
     },
     {
-        "name": "LocalName.set K",
-        "startLine": 90,
+        "name": "LocalName.get #K",
+        "startLine": 138,
         "startColumn": 29,
-        "endLine": 91,
+        "endLine": 139,
+        "endColumn": 30
+    },
+    {
+        "name": "LocalName.set K",
+        "startLine": 139,
+        "startColumn": 30,
+        "endLine": 140,
         "endColumn": 21
     },
     {
-        "name": "#l",
-        "startLine": 92,
-        "startColumn": 8,
-        "endLine": 92,
-        "endColumn": 21
+        "name": "LocalName.set #K",
+        "startLine": 140,
+        "startColumn": 21,
+        "endLine": 141,
+        "endColumn": 22
     },
     {
         "name": "m.n.O",
-        "startLine": 97,
+        "startLine": 146,
         "startColumn": 18,
-        "endLine": 98,
+        "endLine": 147,
         "endColumn": 27
     },
     {
         "name": "p",
-        "startLine": 99,
+        "startLine": 148,
         "startColumn": 15,
-        "endLine": 99,
+        "endLine": 148,
         "endColumn": 28
     },
     {
+        "name": "#p",
+        "startLine": 149,
+        "startColumn": 16,
+        "endLine": 149,
+        "endColumn": 29
+    },
+    {
         "name": "localName",
-        "startLine": 100,
+        "startLine": 150,
         "startColumn": 15,
-        "endLine": 100,
+        "endLine": 150,
         "endColumn": 39
+    },
+    {
+        "name": "localName",
+        "startLine": 151,
+        "startColumn": 16,
+        "endLine": 151,
+        "endColumn": 40
     },
     {
         "name": "m.n.O.prototype.r",
-        "startLine": 100,
-        "startColumn": 39,
-        "endLine": 101,
+        "startLine": 151,
+        "startColumn": 40,
+        "endLine": 152,
         "endColumn": 17
     },
     {
-        "name": "m.n.O.s",
-        "startLine": 101,
+        "name": "m.n.O.prototype.#r",
+        "startLine": 152,
         "startColumn": 17,
-        "endLine": 102,
+        "endLine": 153,
+        "endColumn": 18
+    },
+    {
+        "name": "m.n.O.s",
+        "startLine": 153,
+        "startColumn": 18,
+        "endLine": 154,
         "endColumn": 24
     },
     {
+        "name": "m.n.O.#s",
+        "startLine": 154,
+        "startColumn": 24,
+        "endLine": 155,
+        "endColumn": 25
+    },
+    {
         "name": "m.n.O.t",
-        "startLine": 103,
+        "startLine": 156,
         "startColumn": 22,
-        "endLine": 103,
+        "endLine": 156,
         "endColumn": 35
     },
     {
+        "name": "m.n.O.#t",
+        "startLine": 157,
+        "startColumn": 23,
+        "endLine": 157,
+        "endColumn": 36
+    },
+    {
         "name": "m.n.O.prototype.get a",
-        "startLine": 103,
-        "startColumn": 35,
-        "endLine": 104,
+        "startLine": 157,
+        "startColumn": 36,
+        "endLine": 158,
         "endColumn": 30
     },
     {
-        "name": "#u",
-        "startLine": 105,
-        "startColumn": 16,
-        "endLine": 105,
-        "endColumn": 29
+        "name": "m.n.O.prototype.get #a",
+        "startLine": 158,
+        "startColumn": 30,
+        "endLine": 159,
+        "endColumn": 31
     },
     {
         "name": "LocalName",
-        "startLine": 107,
+        "startLine": 161,
         "startColumn": 28,
-        "endLine": 108,
+        "endLine": 162,
         "endColumn": 27
     },
     {
         "name": "p",
-        "startLine": 109,
+        "startLine": 163,
         "startColumn": 15,
-        "endLine": 109,
+        "endLine": 163,
         "endColumn": 28
     },
     {
-        "name": "localName",
-        "startLine": 110,
-        "startColumn": 15,
-        "endLine": 110,
-        "endColumn": 39
-    },
-    {
-        "name": "LocalName.prototype.r",
-        "startLine": 110,
-        "startColumn": 39,
-        "endLine": 111,
-        "endColumn": 17
-    },
-    {
-        "name": "LocalName.s",
-        "startLine": 111,
-        "startColumn": 17,
-        "endLine": 112,
-        "endColumn": 24
-    },
-    {
-        "name": "LocalName.t",
-        "startLine": 113,
-        "startColumn": 22,
-        "endLine": 113,
-        "endColumn": 35
-    },
-    {
-        "name": "LocalName.prototype.get a",
-        "startLine": 113,
-        "startColumn": 35,
-        "endLine": 114,
-        "endColumn": 30
-    },
-    {
-        "name": "#u",
-        "startLine": 115,
+        "name": "#p",
+        "startLine": 164,
         "startColumn": 16,
-        "endLine": 115,
+        "endLine": 164,
         "endColumn": 29
     },
     {
-        "name": "m.n.Q.prototype.r",
-        "startLine": 117,
+        "name": "localName",
+        "startLine": 165,
+        "startColumn": 15,
+        "endLine": 165,
+        "endColumn": 39
+    },
+    {
+        "name": "localName",
+        "startLine": 166,
+        "startColumn": 16,
+        "endLine": 166,
+        "endColumn": 40
+    },
+    {
+        "name": "LocalName.prototype.r",
+        "startLine": 166,
+        "startColumn": 40,
+        "endLine": 167,
+        "endColumn": 17
+    },
+    {
+        "name": "LocalName.prototype.#r",
+        "startLine": 167,
+        "startColumn": 17,
+        "endLine": 168,
+        "endColumn": 18
+    },
+    {
+        "name": "LocalName.s",
+        "startLine": 168,
+        "startColumn": 18,
+        "endLine": 169,
+        "endColumn": 24
+    },
+    {
+        "name": "LocalName.#s",
+        "startLine": 169,
+        "startColumn": 24,
+        "endLine": 170,
+        "endColumn": 25
+    },
+    {
+        "name": "LocalName.t",
+        "startLine": 171,
         "startColumn": 22,
-        "endLine": 118,
+        "endLine": 171,
+        "endColumn": 35
+    },
+    {
+        "name": "LocalName.#t",
+        "startLine": 172,
+        "startColumn": 23,
+        "endLine": 172,
+        "endColumn": 36
+    },
+    {
+        "name": "LocalName.prototype.get a",
+        "startLine": 172,
+        "startColumn": 36,
+        "endLine": 173,
+        "endColumn": 30
+    },
+    {
+        "name": "LocalName.prototype.get #a",
+        "startLine": 173,
+        "startColumn": 30,
+        "endLine": 174,
+        "endColumn": 31
+    },
+    {
+        "name": "m.n.Q.prototype.r",
+        "startLine": 176,
+        "startColumn": 22,
+        "endLine": 177,
         "endColumn": 17
     },
     {
         "name": "m.n.<computed>.prototype.r",
-        "startLine": 120,
+        "startLine": 179,
         "startColumn": 28,
-        "endLine": 121,
+        "endLine": 180,
         "endColumn": 17
     }
 ]

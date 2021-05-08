@@ -3,7 +3,7 @@
         "name": "<top-level>",
         "startLine": 0,
         "startColumn": 0,
-        "endLine": 150,
+        "endLine": 187,
         "endColumn": 0
     },
     {
@@ -263,6 +263,69 @@
         "startLine": 146,
         "startColumn": 10,
         "endLine": 148,
+        "endColumn": 5
+    },
+    {
+        "name": "A.prototype.get #f15",
+        "startLine": 148,
+        "startColumn": 6,
+        "endLine": 153,
+        "endColumn": 5
+    },
+    {
+        "name": "A.prototype.set #f16",
+        "startLine": 153,
+        "startColumn": 5,
+        "endLine": 156,
+        "endColumn": 5
+    },
+    {
+        "name": "A.get #f17",
+        "startLine": 156,
+        "startColumn": 5,
+        "endLine": 161,
+        "endColumn": 5
+    },
+    {
+        "name": "A.set #f18",
+        "startLine": 161,
+        "startColumn": 5,
+        "endLine": 165,
+        "endColumn": 5
+    },
+    {
+        "name": "A.prototype.#f19",
+        "startLine": 165,
+        "startColumn": 5,
+        "endLine": 169,
+        "endColumn": 5
+    },
+    {
+        "name": "A.#f20",
+        "startLine": 169,
+        "startColumn": 5,
+        "endLine": 173,
+        "endColumn": 5
+    },
+    {
+        "name": "A.prototype.#f21",
+        "startLine": 173,
+        "startColumn": 5,
+        "endLine": 177,
+        "endColumn": 5
+    },
+    {
+        "name": "A.#f22",
+        "startLine": 177,
+        "startColumn": 5,
+        "endLine": 181,
+        "endColumn": 5
+    },
+    {
+        "name": "A.#f23",
+        "startLine": 183,
+        "startColumn": 17,
+        "endLine": 185,
         "endColumn": 5
     }
 ]

@@ -147,4 +147,41 @@ class A
     #f14 = () => {
         //..
     };
+
+    get #f15() {
+        return 42;
+        //..
+    }
+    set #f16(value) {
+        //..
+    }
+
+    static get #f17() {
+        return 42;
+        //..
+    }
+
+    static set #f18(val) {
+        //..
+    }
+
+    *#f19() {
+        //..
+    }
+
+    static *#f20() {
+        //..
+    }
+
+    async #f21() {
+        //..
+    }
+
+    static async #f22() {
+        //..
+    }
+
+    static #f23 = () => {
+        //..
+    };
 }
