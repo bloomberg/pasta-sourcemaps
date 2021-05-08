@@ -13,7 +13,7 @@ class D
         //..
     }
 
-    private f2 = function() 
+    private f2 = function()
     {
         //..
     };
@@ -44,7 +44,7 @@ class D
 
     static get Z() {
         return 42;
-        //..   
+        //..
     }
 
     public *f7() {
@@ -83,7 +83,7 @@ class D
         //..
     }
 
-    "stringLiteral2" = function() 
+    "stringLiteral2" = function()
     {
         //..
     };
@@ -108,7 +108,7 @@ class D
         //..
     }
 
-    42 = function () 
+    42 = function ()
     {
         //..
     };
@@ -178,6 +178,43 @@ class D
     };
 
     #f20 = () => {
+        //..
+    };
+
+    get #f21() {
+        return 42;
+        //..
+    }
+    set #f22(value) {
+        //..
+    }
+
+    static get #f23() {
+        return 42;
+        //..
+    }
+
+    static set #f24(val: unknown) {
+        //..
+    }
+
+    *#f25() {
+        //..
+    }
+
+    static *#f26() {
+        //..
+    }
+
+    async #f27() {
+        //..
+    }
+
+    static async #f28() {
+        //..
+    }
+
+    static #f29 = () => {
         //..
     };
 }
