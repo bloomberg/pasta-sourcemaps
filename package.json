@@ -17,7 +17,7 @@
   ],
   "scripts": {
     "build": "tsc --project ./tsconfig.json",
-    "doc": "typedoc --options typedoc.json src",
+    "doc": "typedoc --options typedoc.json",
     "test": "cross-env NODE_ENV=development mocha",
     "lint": "eslint --ext ts,js .",
     "prepare": "npm run build",
@@ -35,8 +35,7 @@
     "mocha": "^8.4.0",
     "prettier": "^2.3.0",
     "ts-node": "^10.0.0",
-    "typedoc": "^0.15.8",
-    "typedoc-plugin-sourcefile-url": "^1.0.4"
+    "typedoc": "^0.21.0-beta.1"
   },
   "dependencies": {
     "typescript": "^4.3.2",

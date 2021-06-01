@@ -1,9 +1,8 @@
 {
     "name": "@bloomberg/pasta-sourcemaps",
+    "entryPoints": ["./src/main.ts"],
     "out": "docs",
-    "excludeNotExported": "true",
     "excludePrivate": "true",
-    "mode": "file",
     "readme": "none",
-    "sourcefile-url-prefix": "https://github.com/bloomberg/pasta-sourcemaps/blob/master/src/"
+    "gitRevision": "master"
 }
