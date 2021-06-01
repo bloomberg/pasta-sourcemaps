@@ -19,19 +19,18 @@ import {
     convertToRelative,
     encode,
     encodeRelativeFunctionDescs,
-} from "../src/encoder";
-import { FunctionDesc } from "../src/functionDesc";
-import { RelativeFunctionDesc } from "../src/types";
-import { JSONFromFile as JSONFromFileInFolder } from "./helper.t";
+} from "../src/encoder.js";
+import { FunctionDesc } from "../src/functionDesc.js";
+import { RelativeFunctionDesc } from "../src/types.js";
+import { JSONFromFile as JSONFromFileInFolder } from "./helper.t.js";
 
-const test: typeof import("tape") = require("tape");
+import * as assert from "assert";
 
 function JSONFromFile(file: string) {
     return JSONFromFileInFolder(file, "codec");
 }
 
-test("encoder module test: empty function descs", (t) => {
-    t.plan(1);
+it("encoder module test: empty function descs", () => {
     // sourceMap has 2 sources - "foo.js" and "bar.js" but functionDescs is empty
     const sourceMap = JSONFromFile("simple.sourceMap.json");
     const functionsDescs = new Map<string, FunctionDesc[]>();
@@ -40,11 +39,10 @@ test("encoder module test: empty function descs", (t) => {
         x_com_bloomberg_sourcesFunctionMappings: [null, null, null],
     };
     const actual = encode(sourceMap, functionsDescs);
-    t.deepEqual(actual, expected, "empty function descs");
+    assert.deepEqual(actual, expected, "empty function descs");
 });
 
-test("encoder module test: empty sources", (t) => {
-    t.plan(2);
+it("encoder module test: empty sources", () => {
     // empty sources, empty functionDescs
     let sourceMap = JSONFromFile("emptySources.sourceMap.json");
     let functionsDescs = new Map<string, FunctionDesc[]>();
@@ -53,7 +51,7 @@ test("encoder module test: empty sources", (t) => {
         x_com_bloomberg_sourcesFunctionMappings: [],
     };
     let actual = encode(sourceMap, functionsDescs);
-    t.deepEqual(actual, expected, "empty sources, empty function descs");
+    assert.deepEqual(actual, expected, "empty sources, empty function descs");
 
     // empty sources, non-empty functionDescs
     sourceMap = JSONFromFile("emptySources.sourceMap.json");
@@ -61,11 +59,14 @@ test("encoder module test: empty sources", (t) => {
         JSONFromFile("simple.sourceToFunctionDescs.json")
     );
     actual = encode(sourceMap, functionsDescs);
-    t.deepEqual(actual, expected, "empty sources, non-empty function descs");
+    assert.deepEqual(
+        actual,
+        expected,
+        "empty sources, non-empty function descs"
+    );
 });
 
-test("encoder module test: simple", (t) => {
-    t.plan(2);
+it("encoder module test: simple", () => {
     const sourceMap = JSONFromFile("simple.sourceMap.json");
 
     const functionsDescs = new Map<string, FunctionDesc[]>(
@@ -73,18 +74,17 @@ test("encoder module test: simple", (t) => {
     );
     let expected = JSONFromFile("simple.enrichedSourceMap.json");
     let actual = encode(sourceMap, functionsDescs);
-    t.deepEqual(actual, expected);
+    assert.deepEqual(actual, expected);
 
     // reverse the function descs so they are not in order
     functionsDescs.get("simple.js")!.reverse();
 
     expected = JSONFromFile("simpleReversed.enrichedSourceMap.json");
     actual = encode(sourceMap, functionsDescs);
-    t.deepEqual(actual, expected);
+    assert.deepEqual(actual, expected);
 });
 
-test("encoder module test: complex", (t) => {
-    t.plan(1);
+it("encoder module test: complex", () => {
     const sourceMap = JSONFromFile("complex.sourceMap.json");
 
     const functionsDescs = new Map<string, FunctionDesc[]>(
@@ -92,12 +92,10 @@ test("encoder module test: complex", (t) => {
     );
     const expected = JSONFromFile("complex.enrichedSourceMap.json");
     const actual = encode(sourceMap, functionsDescs);
-    t.deepEqual(actual, expected);
+    assert.deepEqual(actual, expected);
 });
 
-test("unit test: convertToRelative", (t) => {
-    t.plan(5);
-
+it("unit test: convertToRelative", () => {
     // empty names
     let functionDescs = JSONFromFile("simple.functionDesc.json");
     let expected = JSONFromFile("emptyNames.relativeFunctionDesc.json");
@@ -107,7 +105,7 @@ test("unit test: convertToRelative", (t) => {
         "real",
         "<anonymous>",
     ]);
-    t.deepEqual(actual, expected, "empty names");
+    assert.deepEqual(actual, expected, "empty names");
 
     // names overlap with functionDescs names
     let names = [
@@ -123,7 +121,7 @@ test("unit test: convertToRelative", (t) => {
     functionDescs = JSONFromFile("simple.functionDesc.json");
     expected = JSONFromFile("simple.relativeFunctionDesc.json");
     actual = convertToRelative(functionDescs, names);
-    t.deepEqual(actual, expected, "names overlap");
+    assert.deepEqual(actual, expected, "names overlap");
 
     // no overlap between names and functionDescs names
     names = [
@@ -140,7 +138,7 @@ test("unit test: convertToRelative", (t) => {
     functionDescs = JSONFromFile("simple.functionDescNoNamesOverlap.json");
     expected = JSONFromFile("simple.relativeFunctionDescNoNamesOverlap.json");
     actual = convertToRelative(functionDescs, names);
-    t.deepEqual(actual, expected, "no names overlap");
+    assert.deepEqual(actual, expected, "no names overlap");
 
     // function descs not in order
     // reverse the function descs, so they are in wrong order
@@ -149,31 +147,29 @@ test("unit test: convertToRelative", (t) => {
     ).reverse();
     expected = JSONFromFile("simple.relativeFunctionDescNoNamesOverlap.json");
     actual = convertToRelative(functionDescs, names);
-    t.deepEqual(actual, expected, "function descs in wrong order");
+    assert.deepEqual(actual, expected, "function descs in wrong order");
 
     // invalid nesting
     functionDescs = JSONFromFile(
         "simple.functionDescInvalidNesting.json"
     ).reverse();
-    t.throws(() => {
+    assert.throws(() => {
         convertToRelative(functionDescs, names);
     });
 });
 
-test("unit test: encodeRelativeFunctionDescs", (t) => {
-    t.plan(3);
-
+it("unit test: encodeRelativeFunctionDescs", () => {
     // empty test
     let actual = encodeRelativeFunctionDescs([]);
     let expected = "";
-    t.deepEqual(actual, expected, "empty");
+    assert.deepEqual(actual, expected, "empty");
 
     // one entry
     actual = encodeRelativeFunctionDescs([
         new RelativeFunctionDesc(0, 0, 0, 11, 6),
     ]);
     expected = "AAAWM";
-    t.deepEqual(actual, expected, "one entry");
+    assert.deepEqual(actual, expected, "one entry");
 
     // multiple entries
     actual = encodeRelativeFunctionDescs([
@@ -182,12 +178,10 @@ test("unit test: encodeRelativeFunctionDescs", (t) => {
         new RelativeFunctionDesc(2, 1, 2, 5, 0),
     ]);
     expected = "AAAWM,CVcEL,ECEKA";
-    t.deepEqual(actual, expected, "multiple entries");
+    assert.deepEqual(actual, expected, "multiple entries");
 });
 
-test("unit test: combineNames", (t) => {
-    t.plan(7);
-
+it("unit test: combineNames", () => {
     const functionDescs = new Map<string, FunctionDesc[]>([
         [
             "foo.js",
@@ -205,32 +199,35 @@ test("unit test: combineNames", (t) => {
         ],
     ]);
 
-    t.deepEqual(
+    assert.deepEqual(
         combineNames(["f1", "f2", "f3"], ["foo.js", "bar.js"], functionDescs),
         ["f1", "f2", "f3"]
     );
-    t.deepEqual(
+    assert.deepEqual(
         combineNames(["f1", "f2"], ["foo.js", "bar.js"], functionDescs),
         ["f1", "f2", "f3"]
     );
-    t.deepEqual(combineNames([], ["foo.js", "bar.js"], functionDescs), [
+    assert.deepEqual(combineNames([], ["foo.js", "bar.js"], functionDescs), [
         "f1",
         "f2",
         "f3",
     ]);
 
-    t.deepEqual(
+    assert.deepEqual(
         combineNames(["f1", "f2"], ["foo.js", "bar.js"], functionDescs),
         ["f1", "f2", "f3"]
     );
 
-    t.deepEqual(combineNames([], ["foo.js"], functionDescs), ["f1", "f2"]);
-    t.deepEqual(combineNames(["f1", "f3"], ["foo.js"], functionDescs), [
+    assert.deepEqual(combineNames([], ["foo.js"], functionDescs), [
+        "f1",
+        "f2",
+    ]);
+    assert.deepEqual(combineNames(["f1", "f3"], ["foo.js"], functionDescs), [
         "f1",
         "f3",
         "f2",
     ]);
-    t.deepEqual(combineNames(["f1"], ["bar.js"], functionDescs), [
+    assert.deepEqual(combineNames(["f1"], ["bar.js"], functionDescs), [
         "f1",
         "f2",
         "f3",

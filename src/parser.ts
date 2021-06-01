@@ -14,10 +14,10 @@
  ** limitations under the License.
  */
 
-import { FunctionDesc } from "../src/functionDesc";
-import { FileType } from "./types";
+import { FunctionDesc } from "../src/functionDesc.js";
+import { FileType } from "./types.js";
 
-import * as ts from "typescript";
+import ts from "typescript";
 
 /**
  * Parse a source file and return descriptions of all functions present in the
@@ -134,14 +134,10 @@ function getPosition(
     endColumn: number;
 } {
     const { pos, end } = range;
-    const {
-        line: startLine,
-        character: startColumn,
-    } = source.getLineAndCharacterOfPosition(pos);
-    const {
-        line: endLine,
-        character: endColumn,
-    } = source.getLineAndCharacterOfPosition(end);
+    const { line: startLine, character: startColumn } =
+        source.getLineAndCharacterOfPosition(pos);
+    const { line: endLine, character: endColumn } =
+        source.getLineAndCharacterOfPosition(end);
     return {
         startLine,
         startColumn,

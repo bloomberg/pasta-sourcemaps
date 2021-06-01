@@ -14,13 +14,13 @@
  ** limitations under the License.
  */
 
-const test: typeof import("tape") = require("tape");
+import * as assert from "assert";
 
-import { parse } from "../src/parser";
-import { FileType } from "../src/types";
-import { JSONFromFile, readFile } from "./helper.t";
+import { parse } from "../src/parser.js";
+import { FileType } from "../src/types.js";
+import { JSONFromFile, readFile } from "./helper.t.js";
 
-test("parser module tests", (t) => {
+it("parser module tests", () => {
     const CASES: [string, FileType][] = [
         ["empty.ts", "TypeScript"],
         ["declaration.js", "ECMAScript"],
@@ -42,17 +42,15 @@ test("parser module tests", (t) => {
         ["classVariations.ts", "TypeScript"],
     ];
 
-    t.plan(CASES.length);
-
     for (const [file, fileType] of CASES) {
         const functionDescFile = `${file}.function_descs.json`;
         const parsed = parse(readFile(file, "parser"), fileType);
         const expected = JSONFromFile(functionDescFile, "parser");
-        t.deepEqual(parsed, expected, `parsing file: ${file}`);
+        assert.deepEqual(parsed, expected, `parsing file: ${file}`);
     }
 });
 
-test("parser module test: syntactically invalid input source", (t) => {
+it("parser module test: syntactically invalid input source", () => {
     const INVALID_CASES: [string, FileType][] = [
         ["invalid1.js", "ECMAScript"],
         ["invalid2.js", "ECMAScript"],
@@ -62,10 +60,8 @@ test("parser module test: syntactically invalid input source", (t) => {
         ["invalid1.tsx", "TSX"],
     ];
 
-    t.plan(INVALID_CASES.length);
-
     for (const [file, fileType] of INVALID_CASES) {
-        t.throws(() => {
+        assert.throws(() => {
             parse(readFile(file, "parser"), fileType);
         });
     }

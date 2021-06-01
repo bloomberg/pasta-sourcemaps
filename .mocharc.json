@@ -1,0 +1,4 @@
+{
+    "loader": "ts-node/esm",
+    "spec": "tests/*.t.ts"
+}

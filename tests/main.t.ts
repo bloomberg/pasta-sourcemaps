@@ -14,13 +14,13 @@
  ** limitations under the License.
  */
 
-import { encode, FunctionDesc, parse, SourceMapDecoder } from "../src/main";
+import { encode, FunctionDesc, parse, SourceMapDecoder } from "../src/main.js";
 import {
     JSONFromFile as JSONFromFileInFolder,
     readFile as readFileInFolder,
-} from "./helper.t";
+} from "./helper.t.js";
 
-const test: typeof import("tape") = require("tape");
+import { strict as assert } from "assert";
 
 function JSONFromFile(file: string) {
     return JSONFromFileInFolder(file, "integration");
@@ -30,9 +30,7 @@ function readFile(file: string) {
     return readFileInFolder(file, "integration");
 }
 
-test("integration test", (t) => {
-    t.plan(21);
-
+it("integration test", () => {
     const sourceFoo = readFile("foo.js");
     const sourceBar = readFile("bar.js");
 
@@ -49,26 +47,26 @@ test("integration test", (t) => {
     const enrichedSourceMap = encode(sourceMap, functionDescs);
     const decoder = new SourceMapDecoder(enrichedSourceMap);
 
-    t.deepEqual(decoder.decode("foo.js", 2, 5), "f1");
-    t.deepEqual(decoder.decode("foo.js", 7, 5), "f2");
-    t.deepEqual(decoder.decode("foo.js", 11, 5), "f3");
-    t.deepEqual(decoder.decode("foo.js", 15, 5), "f4");
-    t.deepEqual(decoder.decode("foo.js", 17, 5), "f5");
-    t.deepEqual(decoder.decode("foo.js", 19, 5), "<anonymous>");
-    t.deepEqual(decoder.decode("foo.js", 27, 5), "Foo");
-    t.deepEqual(decoder.decode("foo.js", 30, 5), "Foo.prototype.method1");
-    t.deepEqual(decoder.decode("foo.js", 33, 5), "Foo.prototype.get prop");
-    t.deepEqual(decoder.decode("foo.js", 36, 5), "Foo.prototype.set prop");
-    t.deepEqual(decoder.decode("foo.js", 4, 0), "<top-level>");
+    assert.equal(decoder.decode("foo.js", 2, 5), "f1");
+    assert.equal(decoder.decode("foo.js", 7, 5), "f2");
+    assert.equal(decoder.decode("foo.js", 11, 5), "f3");
+    assert.equal(decoder.decode("foo.js", 15, 5), "f4");
+    assert.equal(decoder.decode("foo.js", 17, 5), "f5");
+    assert.equal(decoder.decode("foo.js", 19, 5), "<anonymous>");
+    assert.equal(decoder.decode("foo.js", 27, 5), "Foo");
+    assert.equal(decoder.decode("foo.js", 30, 5), "Foo.prototype.method1");
+    assert.equal(decoder.decode("foo.js", 33, 5), "Foo.prototype.get prop");
+    assert.equal(decoder.decode("foo.js", 36, 5), "Foo.prototype.set prop");
+    assert.equal(decoder.decode("foo.js", 4, 0), "<top-level>");
 
-    t.deepEqual(decoder.decode("bar.js", 2, 5), "Bar");
-    t.deepEqual(decoder.decode("bar.js", 6, 5), "Bar.prototype.get prop");
-    t.deepEqual(decoder.decode("bar.js", 9, 5), "Bar.prototype.set prop");
-    t.deepEqual(decoder.decode("bar.js", 14, 5), "f1");
-    t.deepEqual(decoder.decode("bar.js", 18, 5), "bar1");
-    t.deepEqual(decoder.decode("bar.js", 22, 5), "bar2");
-    t.deepEqual(decoder.decode("bar.js", 25, 0), "bar3");
-    t.deepEqual(decoder.decode("bar.js", 25, 52), "bar3");
-    t.deepEqual(decoder.decode("bar.js", 25, 39), "<anonymous>");
-    t.deepEqual(decoder.decode("bar.js", 12, 5), "<top-level>");
+    assert.equal(decoder.decode("bar.js", 2, 5), "Bar");
+    assert.equal(decoder.decode("bar.js", 6, 5), "Bar.prototype.get prop");
+    assert.equal(decoder.decode("bar.js", 9, 5), "Bar.prototype.set prop");
+    assert.equal(decoder.decode("bar.js", 14, 5), "f1");
+    assert.equal(decoder.decode("bar.js", 18, 5), "bar1");
+    assert.equal(decoder.decode("bar.js", 22, 5), "bar2");
+    assert.equal(decoder.decode("bar.js", 25, 0), "bar3");
+    assert.equal(decoder.decode("bar.js", 25, 52), "bar3");
+    assert.equal(decoder.decode("bar.js", 25, 39), "<anonymous>");
+    assert.equal(decoder.decode("bar.js", 12, 5), "<top-level>");
 });

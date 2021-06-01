@@ -63,7 +63,7 @@ To read the full API documentation please visit the [GitHub Pages](https://bloom
 ### Parser
 
 ```javascript
-const pasta = require("@bloomberg/pasta-sourcemaps");
+import * as pasta from "@bloomberg/pasta-sourcemaps";
 
 const source = "function orzo(){}; function penne(){};";
 const functionDescs = pasta.parse(source, "ECMAScript");
@@ -102,7 +102,7 @@ output
 ### Encoder
 
 ```javascript
-const pasta = require("@bloomberg/pasta-sourcemaps");
+import * as pasta from "@bloomberg/pasta-sourcemaps";
 
 const sourceMap = {
     version: 3,
@@ -161,7 +161,7 @@ output
 ### Decoder
 
 ```javascript
-const pasta = require("@bloomberg/pasta-sourcemaps");
+import * as pasta from "@bloomberg/pasta-sourcemaps";
 
 const enrichedSourceMap = {
     version: 3,

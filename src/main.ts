@@ -14,8 +14,8 @@
  ** limitations under the License.
  */
 
-export { EnrichedSourceMap, FileType, SourceMap } from "./types";
-export { FunctionDesc } from "./functionDesc";
-export { parse } from "./parser";
-export { encode } from "./encoder";
-export { SourceMapDecoder } from "./decoder";
+export { EnrichedSourceMap, FileType, SourceMap } from "./types.js";
+export { FunctionDesc } from "./functionDesc.js";
+export { parse } from "./parser.js";
+export { encode } from "./encoder.js";
+export { SourceMapDecoder } from "./decoder.js";

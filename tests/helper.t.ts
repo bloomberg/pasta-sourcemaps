@@ -14,8 +14,9 @@
  ** limitations under the License.
  */
 
-const { readFileSync }: typeof import("fs") = require("fs");
-const { join }: typeof import("path") = require("path");
+import { readFileSync } from "fs";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
 export function JSONFromFile(file: string, folder: string): any {
@@ -23,6 +24,7 @@ export function JSONFromFile(file: string, folder: string): any {
 }
 
 export function readFile(file: string, folder: string): string {
+    const __dirname = dirname(fileURLToPath(import.meta.url));
     const PATH_TO_FIXTURES = join(__dirname, "fixtures", folder);
     return readFileSync(join(PATH_TO_FIXTURES, file), "utf8");
 }

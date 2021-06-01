@@ -14,14 +14,18 @@
  ** limitations under the License.
  */
 
-import { SourceMapDecoder } from "./decoder";
+import { SourceMapDecoder } from "./decoder.js";
 import {
     compareFunction,
     FunctionDesc,
     isPartialOverlap,
-} from "./functionDesc";
-import { EnrichedSourceMap, RelativeFunctionDesc, SourceMap } from "./types";
-const vlq: typeof import("vlq") = require("vlq");
+} from "./functionDesc.js";
+import {
+    EnrichedSourceMap,
+    RelativeFunctionDesc,
+    SourceMap,
+} from "./types.js";
+import * as vlq from "vlq";
 
 const isDevelopment = process.env.NODE_ENV === "development";
 

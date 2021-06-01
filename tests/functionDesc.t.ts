@@ -14,31 +14,29 @@
  ** limitations under the License.
  */
 
-import { compareFunction, FunctionDesc } from "../src/functionDesc";
-const test: typeof import("tape") = require("tape");
+import { compareFunction, FunctionDesc } from "../src/functionDesc.js";
+import { strict as assert } from "assert";
 
-test("unit test: compareFunction", (t) => {
-    t.plan(5);
-
+it("unit test: compareFunction", () => {
     const a = new FunctionDesc("f1", 10, 4, 20, 10);
 
     // equal
     let b = new FunctionDesc("f2", 10, 4, 20, 10);
-    t.equal(compareFunction(a, b), 0);
+    assert.equal(compareFunction(a, b), 0);
 
     // a < b
     b = new FunctionDesc("f2", 22, 0, 42, 0);
-    t.equal(compareFunction(a, b), -1);
+    assert.equal(compareFunction(a, b), -1);
 
     // a < b, starting line number same
     b = new FunctionDesc("f2", 10, 8, 20, 8);
-    t.equal(compareFunction(a, b), -1);
+    assert.equal(compareFunction(a, b), -1);
 
     // a > b
     b = new FunctionDesc("f3", 8, 0, 9, 0);
-    t.equal(compareFunction(a, b), 1);
+    assert.equal(compareFunction(a, b), 1);
 
     // a > b, starting line number same
     b = new FunctionDesc("f4", 10, 0, 10, 3);
-    t.equal(compareFunction(a, b), 1);
+    assert.equal(compareFunction(a, b), 1);
 });

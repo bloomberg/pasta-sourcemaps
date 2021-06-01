@@ -14,10 +14,10 @@
  ** limitations under the License.
  */
 
-import { FunctionDesc, isPartialOverlap } from "./functionDesc";
-import { EnrichedSourceMap, RelativeFunctionDesc } from "./types";
+import { FunctionDesc, isPartialOverlap } from "./functionDesc.js";
+import { EnrichedSourceMap, RelativeFunctionDesc } from "./types.js";
 
-const vlq: typeof import("vlq") = require("vlq");
+import * as vlq from "vlq";
 
 const _functionDescs = Symbol("functionDescs");
 
