@@ -15,7 +15,7 @@
  */
 
 import { FunctionDesc } from "../src/functionDesc.js";
-import { FileType } from "./types.js";
+import type { FileType } from "./types.js";
 
 import ts from "typescript";
 

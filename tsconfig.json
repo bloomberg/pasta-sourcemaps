@@ -1,16 +1,18 @@
 {
   "compilerOptions": {
-    "target": "es2016",
+    "allowSyntheticDefaultImports": true,
     "declaration": true,
+    "importsNotUsedAsValues": "error",
     "module": "ESNext",
     "moduleResolution": "node",
+    "newLine": "LF",
     "noUnusedLocals": true,
     "noUnusedParameters": true,
-    "allowSyntheticDefaultImports": true,
     "outDir": "dist",
-    "strict": true,
     "skipLibCheck": true,
-    "newLine": "LF"
+    "strict": true,
+    "target": "es2016",
+    "useDefineForClassFields": true
   },
   "include": [
     "src/**/*.ts",

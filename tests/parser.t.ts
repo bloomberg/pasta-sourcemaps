@@ -17,7 +17,7 @@
 import * as assert from "assert";
 
 import { parse } from "../src/parser.js";
-import { FileType } from "../src/types.js";
+import type { FileType } from "../src/types.js";
 import { JSONFromFile, readFile } from "./helper.t.js";
 
 it("parser module tests", () => {
