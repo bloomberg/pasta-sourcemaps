@@ -19,14 +19,12 @@ import { EnrichedSourceMap, RelativeFunctionDesc } from "./types.js";
 
 import * as vlq from "vlq";
 
-const _functionDescs = Symbol("functionDescs");
-
 /**
  * Provides a utility to decode a coordinate in a source file
  * into the enclosing function name.
  */
 export class SourceMapDecoder {
-    private [_functionDescs]: Map<string, FunctionDesc[]>;
+    #functionDescs: Map<string, FunctionDesc[]>;
 
     /**
      * Initializes the `SourceMapDecoder`
@@ -36,7 +34,7 @@ export class SourceMapDecoder {
      */
     constructor(sourceMap: EnrichedSourceMap) {
         validateSourceMap(sourceMap);
-        this[_functionDescs] = decodeSources(sourceMap);
+        this.#functionDescs = decodeSources(sourceMap);
     }
 
     /**
@@ -54,8 +52,8 @@ export class SourceMapDecoder {
         line: number,
         column: number
     ): string | null {
-        const descs = this[_functionDescs].get(source);
-        // `null` entries in the source map become empty arrays in `[_functionDescs]`
+        const descs = this.#functionDescs.get(source);
+        // `null` entries in the source map become empty arrays in `#functionDescs`
         // so `descs === undefined` means `source` is not present in the source map
         if (!descs) {
             throw Error(`source ${source} not found in source map`);
