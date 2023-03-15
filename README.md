@@ -3,7 +3,7 @@
 # @bloomberg/pasta-sourcemaps
 
 [![npm Badge](https://img.shields.io/npm/v/@bloomberg/pasta-sourcemaps.svg)](https://www.npmjs.com/package/@bloomberg/pasta-sourcemaps)
-[![Build Status](https://travis-ci.com/bloomberg/pasta-sourcemaps.svg?branch=master)](https://travis-ci.com/bloomberg/pasta-sourcemaps)
+![Build Status](https://github.com/bloomberg/pasta-sourcemaps/actions/workflows/ci.yml/badge.svg)
 
 `pasta`, or Pretty (and) Accurate Stack Trace Analysis, is an implementation of an extension to the source map format that allows for accurate function name decoding. It allows you to extract function-related metadata from a source file and encode it into a source map, as well as decode a pasta-enriched source map to query enclosing function names for a given location.
 
@@ -202,7 +202,7 @@ issue template for your issue, so that we can be sure you're providing the
 necessary information.
 
 Before sending a [Pull Request](../../pulls), please make sure you read our
-[Contribution Guidelines](https://github.com/bloomberg/.github/blob/master/CONTRIBUTING.md).
+[Contribution Guidelines](https://github.com/bloomberg/.github/blob/main/CONTRIBUTING.md).
 
 ## License
 
@@ -211,7 +211,7 @@ Before sending a [Pull Request](../../pulls), please make sure you read our
 ## Code of Conduct
 
 This project has adopted a
-[Code of Conduct](https://github.com/bloomberg/.github/blob/master/CODE_OF_CONDUCT.md).
+[Code of Conduct](https://github.com/bloomberg/.github/blob/main/CODE_OF_CONDUCT.md).
 If you have any concerns about the Code, or behavior which you have experienced
 in the project, please contact us at opensource@bloomberg.net.
 
