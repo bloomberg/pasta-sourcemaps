@@ -5,5 +5,5 @@
     "excludePrivate": "true",
     "mode": "file",
     "readme": "none",
-    "sourcefile-url-prefix": "https://github.com/bloomberg/pasta-sourcemaps/blob/master/src/"
+    "sourcefile-url-prefix": "https://github.com/bloomberg/pasta-sourcemaps/blob/main/src/"
 }
