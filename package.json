@@ -1,6 +1,6 @@
 {
   "name": "@bloomberg/pasta-sourcemaps",
-  "version": "1.5.0",
+  "version": "1.6.0",
   "description": "Pretty (and) Accurate Stack Trace Analysis",
   "main": "./dist/src/main.js",
   "types": "./dist/src/main.d.ts",
@@ -38,7 +38,7 @@
     "typedoc-plugin-sourcefile-url": "^1.0.4"
   },
   "dependencies": {
-    "typescript": "^4.5.2",
+    "typescript": "^5.0.4",
     "vlq": "^1.0.0"
   },
   "prettier": {
