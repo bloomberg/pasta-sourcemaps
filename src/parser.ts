@@ -384,7 +384,7 @@ function getClassName(classNode: ts.ClassLikeDeclaration): string {
 }
 
 function isStatic(func: ts.Node): boolean {
-    if (func.modifiers) {
+    if (ts.canHaveModifiers(func) && func.modifiers) {
         return func.modifiers.some(({ kind }) => {
             return kind === ts.SyntaxKind.StaticKeyword;
         });
