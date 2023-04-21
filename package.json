@@ -5,7 +5,7 @@
   "main": "./dist/src/main.js",
   "types": "./dist/src/main.d.ts",
   "engines": {
-    "node": ">=8.9"
+    "node": ">=16"
   },
   "engineStrict": true,
   "files": [
