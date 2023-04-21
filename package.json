@@ -16,7 +16,7 @@
   ],
   "scripts": {
     "build": "tsc --project ./",
-    "doc": "typedoc --options typedoc.json src",
+    "doc": "typedoc --options typedoc.json",
     "test": "cross-env NODE_ENV=development ts-node node_modules/tape/bin/tape tests/**/*.t.ts",
     "lint": "eslint --ext ts,js .",
     "prepare": "npm run build",
@@ -34,8 +34,7 @@
     "prettier": "^1.19.1",
     "tape": "^4.13.2",
     "ts-node": "^8.10.1",
-    "typedoc": "^0.16.11",
-    "typedoc-plugin-sourcefile-url": "^1.0.4"
+    "typedoc": "^0.24.8"
   },
   "dependencies": {
     "typescript": "^5.1.6",
