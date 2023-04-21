@@ -1,9 +1,11 @@
 {
+    "$schema": "https://typedoc.org/schema.json",
     "name": "@bloomberg/pasta-sourcemaps",
     "out": "docs",
-    "excludeNotExported": "true",
-    "excludePrivate": "true",
-    "mode": "file",
+    "entryPointStrategy": "resolve",
+    "entryPoints": ["./src/main.ts"],
+    "excludePrivate": true,
     "readme": "none",
-    "sourcefile-url-prefix": "https://github.com/bloomberg/pasta-sourcemaps/blob/main/src/"
+    "githubPages": true,
+    "titleLink": "https://github.com/bloomberg/pasta-sourcemaps"
 }
