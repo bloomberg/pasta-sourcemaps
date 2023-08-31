@@ -25,8 +25,7 @@ module.exports = {
         "plugin:@typescript-eslint/recommended",
 
         // Disables ESLint rules that will conflict with eslint-plugin-prettier
-        "prettier",
-        "prettier/@typescript-eslint",
+        "prettier"
     ],
     parser: "@typescript-eslint/parser",
     plugins: [
