@@ -134,14 +134,10 @@ function getPosition(
     endColumn: number;
 } {
     const { pos, end } = range;
-    const {
-        line: startLine,
-        character: startColumn,
-    } = source.getLineAndCharacterOfPosition(pos);
-    const {
-        line: endLine,
-        character: endColumn,
-    } = source.getLineAndCharacterOfPosition(end);
+    const { line: startLine, character: startColumn } =
+        source.getLineAndCharacterOfPosition(pos);
+    const { line: endLine, character: endColumn } =
+        source.getLineAndCharacterOfPosition(end);
     return {
         startLine,
         startColumn,
