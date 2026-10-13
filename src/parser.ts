@@ -23,6 +23,7 @@ import * as ts from "typescript";
  * Parse a source file and return descriptions of all functions present in the
  * source file. Each description includes the name of the function, and start and
  * end coordinates. For anonymous functions the name is "<anonymous>".
+ * Input size is not limited; see the README if parsing untrusted source.
  *
  * @param source - the contents of a source file
  * @param filetype - the type of the source file (e.g. ECMAScript or TypeScript)

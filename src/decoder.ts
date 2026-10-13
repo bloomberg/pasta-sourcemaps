@@ -29,7 +29,8 @@ export class SourceMapDecoder {
     private [_functionDescs]: Map<string, FunctionDesc[]>;
 
     /**
-     * Initializes the `SourceMapDecoder`
+     * Initializes the `SourceMapDecoder`.
+     * Input size is not limited; see the README if decoding untrusted source maps.
      * @param sourceMap - a PASTA enriched source map
      *
      * @throws if the input source map is invalid
