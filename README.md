@@ -178,6 +178,13 @@ decoder.decode("barilla.js", 0, 4);  // orzo
 decoder.decode("barilla.js", 0, 25); // penne
 ```
 
+## Untrusted input
+
+The parser and decoder do not limit the size of their input, so very large or
+deeply nested input can use a lot of CPU and memory. If you process untrusted
+source or source maps, enforce your own limits, such as a maximum input size and
+a sandboxed, time-bound parse or decode.
+
 ## Development
 
 - Clone this repository
